@@ -1,0 +1,23 @@
+import { React} from 'react';
+import Credits from '../components/Credits';
+import Letter from '../components/LetterFromEditor';
+import NavBar from '../components/NavBar';
+import styled from 'styled-components';
+import MobileNavBar from '../components/MobileNavBar';
+
+const HomeContainer = styled.div`
+`;
+
+const Home = () => {
+
+    return (
+        <HomeContainer>
+            <NavBar/>
+            <MobileNavBar/>
+            <Letter/>
+            <Credits/>
+        </HomeContainer>
+    );
+};
+
+export default Home;
