@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
 
 const HomeContainer = styled.div`
+    background-color: purple;
 `;
 
 const Home = () => {

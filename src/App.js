@@ -1,17 +1,25 @@
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { React } from 'react';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+
 import Home from './containers/Home';
+import Section from './containers/Section';
+import { university_news_articles } from './mockdata/university_news_articles';
+import { opinion_articles } from './mockdata/opinion_articles';
+import { sports_articles } from './mockdata/sports_articles';
+import { ae_articles } from './mockdata/ae_articles';
+import { city_news_articles } from './mockdata/city_news_articles';
+
 
 const App = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<University />} />
-        <Route path="/" element={<City />} />
-        <Route path="/" element={<Opinion />} />
-        <Route path="/" element={<ArtsAndEntertainment />} />
-        <Route path="/" element={<Sports />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="uni-news" element={<Section id="uni-news" header="UNIVERSITY NEWS" articles={university_news_articles} next="City News" link="/city-news" key={0} />} />
+        <Route path="city-news" element={<Section id="city-news" header="CITY NEWS" articles={city_news_articles} next="Opinion" link="/opinion" key={1} />} />
+        <Route path="opinion" element={<Section id="opinion" header="OPINION" articles={opinion_articles} next="A&E" link="/a&e" key={2} />} />
+        <Route path="a&e" element={<Section id="a&e" header="A&E" articles={ae_articles} next="Sports" link="/sports" key={3} />} />
+        <Route path="sports" element={<Section id="sports" header="SPORTS" articles={sports_articles} next="Home" link="/" key={4} />} />
       </Routes>
     </BrowserRouter>
   );
