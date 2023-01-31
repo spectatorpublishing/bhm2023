@@ -6,7 +6,9 @@ import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
 
 const HomeContainer = styled.div`
-    background-color: purple;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#5F193E, #3F132e, #1D132b);
 `;
 
 const Home = () => {
