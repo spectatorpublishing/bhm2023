@@ -1,5 +1,5 @@
 import { React} from 'react';
-import Credits from '../components/Credits';
+import Credits from './Credits';
 import Letter from '../components/LetterFromEditor';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';

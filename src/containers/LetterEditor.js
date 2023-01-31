@@ -4,11 +4,11 @@ import styled from 'styled-components';
 const LetterWrapper = styled.div`
 `;
 
-const Letter = () => {
+const LetterEditor = () => {
 
     return (
         <LetterWrapper></LetterWrapper>
     );
-}
+};
 
-export default Letter;
+export default LetterEditor;
