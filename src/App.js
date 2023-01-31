@@ -3,11 +3,11 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import Home from './containers/Home';
 import Section from './containers/Section';
-import { university_news_articles } from './mockdata/university_news_articles';
-import { opinion_articles } from './mockdata/opinion_articles';
-import { sports_articles } from './mockdata/sports_articles';
-import { ae_articles } from './mockdata/ae_articles';
-import { city_news_articles } from './mockdata/city_news_articles';
+import { university_news_articles } from './data/articles';
+import { opinion_articles } from './data/articles';
+import { sports_articles } from './data/articles';
+import { ae_articles } from './data/articles';
+import { city_news_articles } from './data/articles';
 
 
 const App = () => {

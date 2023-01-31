@@ -1,3 +1,4 @@
+// Mock data to define all the people who work on a special edition
 export const credits = {
     "Corporate Board": [
             { staff_name: "Clara Ence Morse", title: "Editor-in-Chief" },
