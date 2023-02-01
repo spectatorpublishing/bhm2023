@@ -15,8 +15,6 @@ const Home = () => {
 
     return (
         <HomeContainer>
-            <NavBar/>
-            <MobileNavBar/>
             <Letter/>
             <Credits/>
         </HomeContainer>
