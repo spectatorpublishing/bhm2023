@@ -1,6 +1,6 @@
 import { React} from 'react';
 import Credits from './Credits';
-import Letter from '../components/LetterFromEditor';
+import Letter from '../containers/LetterEditor';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
