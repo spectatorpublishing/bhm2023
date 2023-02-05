@@ -6,8 +6,8 @@ import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
 
 const HomeContainer = styled.div`
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width:100%;
     background: linear-gradient(#5F193E, #3F132e, #1D132b);
 `;
 
