@@ -109,7 +109,7 @@ const Credits = () => {
     return (
         <Container id="credits">
             <Hr/>
-            <HeaderDiv><Header>Staff who made this issue possible</Header></HeaderDiv>
+            <HeaderDiv><Header>Staff who made this issue possible ~</Header></HeaderDiv>
             <SectAndNames>
                 {Object.entries(credits).map(([section, key]) => {
                     return(
