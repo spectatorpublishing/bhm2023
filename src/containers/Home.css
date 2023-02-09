@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.home-container {
+    width: 100vw;
+    height: 100%;
+    /*background: linear-gradient(180deg, rgba(148, 95, 128, 0.8) 0%, rgba(16, 7, 29, 0.8) 100%), #3F132E;*/
+    display: flex;
+ }
+ .background {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(180deg, #661949 0%, #10071D 100%), #3F132E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ /*
+ .ellipse2{
+    background-color: #AA3864;
+    filter: blur(5.625rem);
+    width: 35rem;
+    height: 40rem;
+    border-radius: 100%;
+    position: absolute;
+    left: 80%;
+    top: 734px;
+    z-index: -2;
+ }
+ .ellipse3{
+    background: #F07D72;
+    filter: blur(3.125rem);
+    width: 20.625rem;
+    height: 20.625rem;
+    border-radius: 100%;
+    position: absolute;
+    left: 90%;
+    top: 734px;
+ }
+ .wrapper {
+    z-index: 1;
+    position: absolute;
+ }
+ */
+ .spec-logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 3.813rem;
+    margin-bottom: 1.75rem;
+ }
+ .img {
+    display: block;
+ }
+ .line {
+    width: 93.75%;
+    height: 0.063rem;
+    background-color: white;
+    margin-bottom: 3.75rem;
+    align-self: center;
+ }
+ .wrapper {
+   display: flex;
+ }
+ .photo {
+   display: flex;
+   width: 72%;
+   height: auto;
+   margin-left: 7.3%;
+   position: relative;
+ }
+ .title {
+   display: flex;
+   position: absolute;
+   margin-top: 35%; 
+   color: white;
+   margin-left: 29%;
+   font-family: "EB Garamond";
+   font-weight: 600;
+   line-height: 8.125rem;
+   font-size: 6.25rem;
+   text-align: right;
+ }
+ .body {
+   margin-top: 3.75rem;
+   color: white;
+ }
+ 
+ 
