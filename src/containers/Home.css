@@ -2,45 +2,103 @@
 
 .home-container {
     width: 100vw;
-    height: 100%;
-    /*background: linear-gradient(180deg, rgba(148, 95, 128, 0.8) 0%, rgba(16, 7, 29, 0.8) 100%), #3F132E;*/
+    height: 100vw;
+    /*height: 100%;
+    background: linear-gradient(180deg, rgba(148, 95, 128, 0.8) 0%, rgba(16, 7, 29, 0.8) 100%), #3F132E;*/
     display: flex;
+    position: relative;
  }
  .background {
     width: 100vw;
-    height: auto;
+    height: 500vw;
     background: linear-gradient(180deg, #661949 0%, #10071D 100%), #3F132E;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
+    z-index: 5;
  }
- /*
- .ellipse2{
-    background-color: #AA3864;
+ 
+ .ellipse1{
+    background: #AA3864;
     filter: blur(5.625rem);
+    opacity: 60%;
     width: 35rem;
     height: 40rem;
     border-radius: 100%;
     position: absolute;
-    left: 80%;
+    margin-left: 600px;
     top: 734px;
-    z-index: -2;
  }
- .ellipse3{
+ .above {
+   position: absolute;
+   z-index: 10;
+ }
+ .below {
+   position: absolute;
+   z-index: 5;
+ }
+ .bottom {
+   position: absolute;
+ }
+ 
+ .ellipse2{
     background: #F07D72;
-    filter: blur(3.125rem);
+    opacity: 20%;
+    filter: blur(3.5rem);
     width: 20.625rem;
     height: 20.625rem;
     border-radius: 100%;
     position: absolute;
-    left: 90%;
+    margin-left: 600px;
     top: 734px;
  }
+ .ellipse3{
+   background: #381F38;
+   filter: blur(5rem);
+   width: 20.625rem;
+   height: 20.625rem;
+   border-radius: 100%;
+   position: absolute;
+   top: 50px;
+   margin-left: 1px;
+}
+.ellipse4{
+   background: rgba(212, 156, 178, 0.6);
+   filter: blur(5.5rem);
+   opacity: 60%;
+   width: 23.625rem;
+   height: 23.625rem;
+   border-radius: 100%;
+   position: absolute;
+   top: 2000px;
+   margin-left: 800px;
+}
+.ellipse5{
+   background: #1D132B;
+   filter: blur(5.5rem);
+   width: 20.625rem;
+   height: 25.625rem;
+   border-radius: 100%;
+   position: absolute;
+   top: 2500px;
+   margin-left: 1px;
+}
+.ellipse6{
+   background: rgba(227, 101, 47, 0.23);
+   filter: blur(4rem);
+   width: 20.625rem;
+   height: 20.625rem;
+   border-radius: 100%;
+   position: absolute;
+   top: 70px;
+   margin-left: 1px;
+}
  .wrapper {
     z-index: 1;
     position: absolute;
  }
- */
+ 
  .spec-logo {
     justify-content: center;
     display: flex;
