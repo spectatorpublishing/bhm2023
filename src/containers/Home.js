@@ -16,6 +16,7 @@ const Home = () => {
     return (
         <HomeContainer>
             <Letter/>
+            <NavBar/>
             <Credits/>
         </HomeContainer>
     );

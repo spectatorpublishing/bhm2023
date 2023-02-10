@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import NavBar from '../components/NavBar';
 
 const SectionWrapper = styled.div`
     height: 100vh;
@@ -10,7 +11,9 @@ const SectionWrapper = styled.div`
 const Section = () => {
 
     return (
-        <SectionWrapper></SectionWrapper>
+        <SectionWrapper>
+            <NavBar isSection/>
+        </SectionWrapper>
     );
 };
 

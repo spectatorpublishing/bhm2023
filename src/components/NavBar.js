@@ -6,11 +6,16 @@ const NavWrapper = styled.div`
 `;
 
 const VertNav = styled.div`
-    position: absolute;
     right: 5.5vw;
     top:190px;
     z-index:100;
     padding:1rem 0rem;
+    background-color: ${props => props.isSection ? 'rgba(99, 55, 84, 1)' : 'transparent'};
+    border-radius: ${props => props.isSection ? '25px' : 'none'};
+    box-shadow: ${props => props.isSection ? '0px 4px 4px 0px rgba(0, 0, 0, 0.25)' : 'none'};
+    position: ${props => props.isSection ? 'absolute' : 'absolute'};
+    margin-right: 0.1rem;
+    padding-right: 1.2rem;
 `;
 
 const Tab = styled.a`
@@ -31,9 +36,8 @@ const Tab = styled.a`
 
 const NavText = styled.div`
     font-style: normal;
-    margin-right:2rem;
+    margin-right:1.5rem;
     text-transform: uppercase;
-
 `;
 
 const Bullet = styled.span`
@@ -45,11 +49,11 @@ const Bullet = styled.span`
     margin-top: 0.38rem;
 `
 
-const NavBar = () => {
+const NavBar = ({isSection}) => {
     const [current, setCurrent] = useState("/#");
     return(
         <NavWrapper>
-            <VertNav>
+            <VertNav isSection={isSection}>
             {sections.map((section, index) => (
                 <Tab current = {current == section.url} onClick = {()=>setCurrent(section.url)} key={index}>
                      <Bullet></Bullet> <NavText>{section.title} {current==section.url}</NavText>  
