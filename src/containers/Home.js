@@ -33,21 +33,9 @@ const Home = () => {
 
 
    return (
-        
-       <div className = "home-container">
-        <div className = "bottom">
-        <div className = "background"></div>
-        </div>
-        <div className = "below">
-        <div className = "ellipse1"></div>
-        <div className = "ellipse2"></div>
-        <div className = "ellipse3"></div>
-        <div className = "ellipse4"></div>
-        <div className = "ellipse5"></div>
-        <div className = "ellipse6"></div>
-           </div>
-
-        <div className = "above">
+        <HomeContainer>
+           <div className='background'>
+          
            <div className = "spec-logo">
            <img src = "https://spec-imagehosting.s3.amazonaws.com/CDSwhitemasthead.png" alt = "Columbia Spectator logo" width = "24.375%" height = "auto"></img>
            </div>
@@ -56,13 +44,17 @@ const Home = () => {
            <div className = "photo"><img src = {bhm} alt = "black history month graphic" width = "100%"></img></div>
            <div className = "title">BLACK HISTORY<br></br>MONTH</div>
            </div>
-           </div>
 
-               
-           </div>
+
+               </div>
+            <NavBar/>
+           <MobileNavBar/>
+           <Letter/>
+            <Credits/>
+        </HomeContainer>
+
    );
 };
 
 
 export default Home;
-
