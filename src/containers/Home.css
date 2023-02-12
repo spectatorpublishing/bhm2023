@@ -7,33 +7,6 @@
      flex-direction: column;
      justify-content: center;
   }
-  /*
-  .ellipse2{
-     background-color: #AA3864;
-     filter: blur(5.625rem);
-     width: 35rem;
-     height: 40rem;
-     border-radius: 100%;
-     position: absolute;
-     left: 80%;
-     top: 734px;
-     z-index: -2;
-  }
-  .ellipse3{
-     background: #F07D72;
-     filter: blur(3.125rem);
-     width: 20.625rem;
-     height: 20.625rem;
-     border-radius: 100%;
-     position: absolute;
-     left: 90%;
-     top: 734px;
-  }
-  .wrapper {
-     z-index: 1;
-     position: absolute;
-  }
-  */
   .spec-logo {
      justify-content: center;
      display: flex;
