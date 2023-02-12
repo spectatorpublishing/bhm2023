@@ -3,7 +3,6 @@ import Credits from './Credits';
 import Letter from '../containers/LetterEditor';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
-import './Home.css';
 import MobileNavBar from '../components/MobileNavBar';
 import bhm from './bhm.JPG';
 
