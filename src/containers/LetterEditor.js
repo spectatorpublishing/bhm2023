@@ -1,14 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
 const LetterWrapper = styled.div`
 
     padding: 3rem 11rem 4rem 11rem;
     
     @media only screen and (max-width: 1200px){
-
         padding: 3rem 9rem 4rem 9rem;
     }
     @media only screen and (max-width: 1000px){
@@ -26,18 +23,11 @@ const LetterWrapper = styled.div`
         padding: 0;
         display: inline-block;
     }
-     
-    
-
 `;
 
 
-
 const LetterEditor = () => {
-    
-    return (
-
-        
+    return (        
         <LetterWrapper>
             <Title>Letter From The Editor ~</Title>
             <MobileTitle>Letter From The Editor</MobileTitle>
@@ -47,6 +37,7 @@ const LetterEditor = () => {
             <p> Nam scelerisque vel sem et vestibulum. Praesent et suscipit nisi. Maecenas tincidunt lectus non accumsan vehicula. In rutrum risus eget libero laoreet, id sollicitudin mi accumsan. Phasellus a ligula finibus, molestie urna a, porta ligula. Cras hendrerit risus ut posuere congue. Ut tincidunt, felis ut rhoncus dignissim, dolor tellus mollis odio, nec euismod tellus tortor sit amet diam. Curabitur in eleifend ante.</p>
             <p> Nullam cursus vel tellus ut sodales. Cras quis euismod sem. In rhoncus elit fringilla, dapibus mauris et, tempor ex. Nulla metus dui, mattis sit amet dictum sit amet, mattis in lectus. In blandit molestie molestie. Quisque tempor laoreet sollicitudin. Aenean tempor vulputate arcu. Nunc commodo a mi ut elementum. Quisque quis metus nisi. Vivamus eleifend turpis ac molestie scelerisque. Suspendisse vel nisl tempor, semper elit ac, maximus quam. Proin et volutpat tellus.</p>
         </Text>
+        
         <Signatures>
             <Signature className='left'><div className='name'>Name</div><div className='title'>Editor in Chief</div></Signature>
             <Spacing/>
@@ -54,17 +45,8 @@ const LetterEditor = () => {
         </Signatures>
 
         </LetterWrapper>
-
-        
     );
-
-    
 };
-
-
-
-
-
 
 const Title = styled.div`
     
@@ -111,12 +93,7 @@ const MobileTitle = styled.div`
   
     @media only screen and (min-width: 570px) {
         display: none;
-        
     }
-
-
-  
-
 `;
 
 
@@ -124,7 +101,6 @@ const MobileTitle = styled.div`
 
 const Text = styled.div`
     p{
-
     color: #EAF5FF;
     font-family: 'Khula';
     font-style: normal;
@@ -136,16 +112,11 @@ const Text = styled.div`
         font-size: 1rem;
 
     }
-
     @media only screen and (max-width: 400px) {
         padding: 0;
         font-size: 0.9rem;
         display: inline-block;
     }
-
-    
-    
-
     }
 `;
 
@@ -160,9 +131,6 @@ const Signatures = styled.div`
         text-align: left;
         
     }
-
-    
-    
 `;
 
 const Spacing = styled.div`
@@ -189,7 +157,6 @@ const Signature = styled.div`
             
             
         }
-       
     }
     .title {
         color: white;
@@ -204,16 +171,8 @@ const Signature = styled.div`
             display: inline-block;
             
         }
- 
-        
     }
-
     margin: 0rem;
 `;
 
 export default LetterEditor;
-
-
-
-
-
