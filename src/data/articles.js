@@ -1,5 +1,5 @@
 // Mock data to define articles to be passed into each section page
-export const ae_articles = [
+export const ac_articles = [
     {
       "article_link": "https://www.columbiaspectator.com/arts-and-entertainment/2022/08/26/a-beginners-guide-to-morningside-heights-eating/",
       "article_title": "A beginner’s guide to Morningside Heights eating",

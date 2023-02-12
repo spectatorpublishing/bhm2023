@@ -98,12 +98,6 @@ const Name = styled.div`
     }
 `;
 
-const Hr = styled.hr`
-  border: 1px solid #424242;
-  margin:0;
-  padding:0;
-  opacity:0.8;
-`
 
 const Credits = () => {
     return (

@@ -2,26 +2,26 @@
 export const sections = [
     {
         title: "Home",
-        url: "/#",
+        url: "/",
     },
     {
         title: "University",
-        url: "/#university",
+        url: "/uni-news",
     },
     {
         title: "City",
-        url: "/#city",
+        url: "/city-news",
     },
     {
         title: "Opinion",
-        url: "/#opinion",
+        url: "/opinion",
     },
     {
-        title: "Photo",
-        url: "/#photo",
+        title: "A&C",
+        url: "/a&c",
     },
     {
-        title: "Credits",
-        url: "/#credits",
+        title: "Sports",
+        url: "/sports",
     }
 ];

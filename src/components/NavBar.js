@@ -1,8 +1,13 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import {sections} from '../data/sections';
+import { NavHashLink } from 'react-router-hash-link';
 
 const NavWrapper = styled.div`
+    a {
+        text-decoration: none;
+        color: ${props => props.currentSection ? 'rgba(248, 190, 185, 1)' : 'white'};
+    }
 `;
 
 const VertNav = styled.div`
@@ -22,8 +27,8 @@ const Tab = styled.a`
     display:block;
     text-align:right;
     padding:  0.75rem 1rem 0.75rem 1.5rem;
-    color: ${props => props.current ? 'rgba(248, 190, 185, 1)' : 'white'};
-    font-weight: ${props => props.current ? 800 : 400};
+    color: ${props => props.currentSection ? 'rgba(248, 190, 185, 1)' : 'white'};
+    font-weight: ${props => props.currentSection ? "bold" : 400};
     div {
         width: 10rem;
         font-size:15px;
@@ -49,15 +54,29 @@ const Bullet = styled.span`
     margin-top: 0.38rem;
 `
 
-const NavBar = ({isSection}) => {
-    const [current, setCurrent] = useState("/#");
+
+const NavBar = ({isSection, currentSection, setSection}) => {
+    // const [current, setCurrent] = useState("/");
+    const [show, setToggle] = useState(false);
+
+    const handleMenuItemOnClick = (newSection) => {
+        if (newSection.title === "Credits") {
+            setSection("Home");
+        } else {
+            setSection(newSection.title);
+        }
+        setToggle(!show);
+    }
+
     return(
         <NavWrapper>
             <VertNav isSection={isSection}>
             {sections.map((section, index) => (
-                <Tab current = {current == section.url} onClick = {()=>setCurrent(section.url)} key={index}>
-                     <Bullet></Bullet> <NavText>{section.title} {current==section.url}</NavText>  
-                </Tab>
+                <NavHashLink smooth to={section.url}>
+                    <Tab currentSection = {currentSection == section.url} onClick = {() => handleMenuItemOnClick(section)} key={index}>
+                        <Bullet></Bullet><NavText>{section.title} {currentSection==section.url}</NavText>  
+                    </Tab>
+                </NavHashLink>
             ))}
             </VertNav>
         </NavWrapper>
