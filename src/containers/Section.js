@@ -150,28 +150,29 @@ const Section = () => {
 
     return (
         <Container id = "section">
+            <NavBar isSection/>
             <HeaderDiv><Header>UNIVERSITY</Header></HeaderDiv>
             <AllArticlesBox>
-            <ArticleInfo1>
-                <BigBox1>
-                <ArticleTitle>Title</ArticleTitle>
-                <ArticleAuthor>By: Author</ArticleAuthor>
-                <View1>
-                    <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></img>
-                </View1>
-                <LittleBox1>                
-                </LittleBox1></BigBox1>
-            </ArticleInfo1>
+                {/* <ArticleInfo1>
+                    <BigBox1>
+                    <ArticleTitle>Title</ArticleTitle>
+                    <ArticleAuthor>By: Author</ArticleAuthor>
+                    <View1>
+                        <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></img>
+                    </View1>
+                    <LittleBox1>                
+                    </LittleBox1></BigBox1>
+                </ArticleInfo1>
 
-            <ArticleInfo2>
-                <BigBox2>
-                <ArticleTitle>Title</ArticleTitle>
-                <ArticleAuthor>By: Author</ArticleAuthor>
-                <View2>
-                    <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></img>
-                </View2>
-                    <LittleBox2></LittleBox2></BigBox2>
-            </ArticleInfo2>
+                <ArticleInfo2>
+                    <BigBox2>
+                    <ArticleTitle>Title</ArticleTitle>
+                    <ArticleAuthor>By: Author</ArticleAuthor>
+                    <View2>
+                        <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></img>
+                    </View2>
+                        <LittleBox2></LittleBox2></BigBox2>
+                </ArticleInfo2> */}
             </AllArticlesBox>
         </Container>
     );
