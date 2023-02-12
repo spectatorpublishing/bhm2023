@@ -16,8 +16,22 @@ const Home = () => {
     return (
         <HomeContainer>
             <Letter/>
+            <div className='background'>
+
+            <div className = "spec-logo">
+            <img src = "https://spec-imagehosting.s3.amazonaws.com/CDSwhitemasthead.png" alt = "Columbia Spectator logo" width = "24.375%" height = "auto"></img>
+            </div>
+            <div className = "line"></div>
+            <div className = "wrapper">
+            <div className = "photo"><img src = {bhm} alt = "black history month graphic" width = "100%"></img></div>
+            <div className = "title">BLACK HISTORY<br></br>MONTH</div>
+            </div>
+
             <NavBar/>
-            <Credits/>
+            <MobileNavBar/>
+            <Letter/>
+             <Credits/>
+             </div>
         </HomeContainer>
     );
 };
