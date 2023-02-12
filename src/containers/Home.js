@@ -28,6 +28,9 @@ const Home = () => {
    );
 };*/
 
+const HomeContainer = styled.div`
+`;
+
 
 const Home = () => {
 
@@ -46,11 +49,12 @@ const Home = () => {
            </div>
 
 
-               </div>
+              
             <NavBar/>
            <MobileNavBar/>
            <Letter/>
             <Credits/>
+            </div>
         </HomeContainer>
 
    );
