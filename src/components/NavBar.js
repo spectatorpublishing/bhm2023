@@ -6,7 +6,9 @@ import { NavHashLink } from 'react-router-hash-link';
 const NavWrapper = styled.div`
     a {
         text-decoration: none;
-        color: ${props => props.currentSection ? 'rgba(248, 190, 185, 1)' : 'white'};
+    }
+    @media only screen and (max-width: 1023px){
+        display: none;
     }
 `;
 
@@ -27,8 +29,8 @@ const Tab = styled.a`
     display:block;
     text-align:right;
     padding:  0.75rem 1rem 0.75rem 1.5rem;
-    color: ${props => props.currentSection ? 'rgba(248, 190, 185, 1)' : 'white'};
-    font-weight: ${props => props.currentSection ? "bold" : 400};
+    color: ${props => props.currentSection ? '#F8BEB9' : 'white'};
+    font-weight: ${props => props.currentSection ? 700 : 400};
     div {
         width: 10rem;
         font-size:15px;
@@ -55,31 +57,21 @@ const Bullet = styled.span`
 `
 
 
-const NavBar = ({isSection, currentSection, setSection}) => {
-    // const [current, setCurrent] = useState("/");
-    const [show, setToggle] = useState(false);
-
-    const handleMenuItemOnClick = (newSection) => {
-        if (newSection.title === "Credits") {
-            setSection("Home");
-        } else {
-            setSection(newSection.title);
-        }
-        setToggle(!show);
-    }
-
+const NavBar = ({isSection}) => {
+    const [currentSection, setSection] = useState("/");
     return(
         <NavWrapper>
             <VertNav isSection={isSection}>
             {sections.map((section, index) => (
                 <NavHashLink smooth to={section.url}>
-                    <Tab currentSection = {currentSection == section.url} onClick = {() => handleMenuItemOnClick(section)} key={index}>
+                    <Tab currentSection = {currentSection == section.url} onClick = {() => setSection(section.url)} key={index}>
                         <Bullet></Bullet><NavText>{section.title} {currentSection==section.url}</NavText>  
                     </Tab>
                 </NavHashLink>
             ))}
             </VertNav>
         </NavWrapper>
+        
     );
 };
 

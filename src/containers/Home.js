@@ -68,6 +68,7 @@ const Home = () => {
     return (
         <HomeContainer>
                 <SpecLogo><Image src = "https://spec-imagehosting.s3.amazonaws.com/CDSwhitemasthead.png" alt = "Columbia Spectator logo" ></Image></SpecLogo>
+                <MobileNavBar/>
                 <Line></Line>
                 <Wrapper>
                     <Photo><img src = {bhm} alt = "black history month graphic" width = "100%"></img></Photo>
