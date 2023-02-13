@@ -105,22 +105,69 @@ const ArticleInfo1 = styled.div`
 `;
 
 const ArticleTitle1= styled(ArticleInfo1)`
-    size: 100px;
+    font-size: 40px;
 `;
 
 const ArticleAuthor1= styled(ArticleInfo1)`
-    size: 16px;
-
+    font-size: 16px;
 `;
 
-const Rectangle2 = style.div`
+
+const MainImage2 = styled.div`
+    height: 90%;
+    position: absolute;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(${props => props.src});
+    z-index: 2;
+    top: -25px;
+    left: 250px;
+    @media screen and (max-width: 768px) {
+        width: 10px;
+    } 
+`;
+
+const Rectangle2 = styled.div`
     background: #5F415B;
+    width: 683px;
+    height:356px;
+    margin-top:34px;
+    margin-left:121px;
 `;
 
-const OffSetRectangle2 = style.div`
+const OffSetRectangle2 = styled.div`
     background: #70586D;
+    height: 293px;
+    width: 387px;
+    left: 1000px;
+    top: 760px;
 `;
 
+const Column2 = styled.div`
+    width: 35%;
+    background-color: #5F415B;
+    border-color: #5F415B;
+    border: 2px;
+    position: relative;
+    border-radius: 0px;
+`;
+
+const ArticleInfo2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    font-family: 'EB Garamond';
+    text-transform: capitalize;
+    color: white;
+`;
+
+const ArticleTitle2= styled(ArticleInfo2)`
+    font-size: 40px;
+`;
+
+const ArticleAuthor2= styled(ArticleInfo2)`
+    font-size: 16px;
+`;
 
 
 
@@ -145,6 +192,20 @@ const Section = () => {
                 </Column1>
             </Rectangle1>
 
+            <Rectangle2>
+                <Column2>
+                    <ArticleInfo2> 
+                        <ArticleTitle2>Article Title </ArticleTitle2>
+                        <ArticleAuthor2>By Some Person's Name </ArticleAuthor2>
+                    </ArticleInfo2>
+                </Column2>               
+                <Column2>
+                    <MainImage2 src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></MainImage2>
+                    <OffSetRectangle2></OffSetRectangle2>
+                </Column2>
+
+            </Rectangle2>
+
             <Rectangle1>
                 <Column1>
                     <MainImage1 src="https://upload.wikimedia.org/wikipedia/commons/0/05/Martin_Luther_King%2C_Jr..jpg"></MainImage1>
@@ -157,6 +218,22 @@ const Section = () => {
                     </ArticleInfo1>
                 </Column1>
             </Rectangle1>
+
+            <Rectangle2>
+                <Column2>
+                    <ArticleInfo2> 
+                        <ArticleTitle2>Article Title </ArticleTitle2>
+                        <ArticleAuthor2>By Some Person's Name </ArticleAuthor2>
+                    </ArticleInfo2>
+                </Column2>
+                <Column2>
+                <MainImage2 src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></MainImage2>
+                    <OffSetRectangle2></OffSetRectangle2>
+                
+                </Column2>
+                
+            </Rectangle2>
+
             </AllRectangles>
         </Container>
     );
