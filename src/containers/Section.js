@@ -163,35 +163,30 @@ const Section = () => {
             <NavBar isSection/>
             <HeaderDiv><Header>UNIVERSITY</Header></HeaderDiv>
             <AllRectangles>
-            <ArticleInfo1><ArticleInfoTitle1>This Article's Title
-                </ArticleInfoTitle1><ArticleInfoAuthor1>By Some Person's Name</ArticleInfoAuthor1></ArticleInfo1>
+            <ArticleInfo1>
+                <ArticleInfoTitle1>This Article's Title</ArticleInfoTitle1>
+                <ArticleInfoAuthor1>By Some Person's Name</ArticleInfoAuthor1>
+            </ArticleInfo1>
                 <View1>
                     <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg" alt="Dr. King"></img>
-                    </View1>
-            <Rectangle1><LittleRectangle1/></Rectangle1>
+                </View1>
+            <Rectangle1>
+                <LittleRectangle1>
+                </LittleRectangle1>
+            </Rectangle1>
 
-                <ArticleInfo2><ArticleInfoTitle2>This Article's Title
-                </ArticleInfoTitle2><ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2></ArticleInfo2>
+
+            <ArticleInfo2>
+                <ArticleInfoTitle2>This Article's Title</ArticleInfoTitle2>
+                <ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2>
+            </ArticleInfo2>
                 <View2>
                     <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg" alt="Dr. King"></img>
                 </View2>
-                <Rectangle2><View2/><LittleRectangle2/></Rectangle2>
-
-
-                <ArticleInfo1><ArticleInfoTitle1>This Article's Title
-                </ArticleInfoTitle1><ArticleInfoAuthor1>By Some Person's Name</ArticleInfoAuthor1></ArticleInfo1>
-                <View1>
-                    <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg" alt="Dr. King"></img>
-                    </View1>
-            <Rectangle1><LittleRectangle1/></Rectangle1>
-            
-
-            <ArticleInfo2><ArticleInfoTitle2>This Article's Title
-                </ArticleInfoTitle2><ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2></ArticleInfo2>
-                <View2>
-                    <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg" alt="Dr. King"></img>
-                </View2>
-                <Rectangle2><LittleRectangle2/></Rectangle2>
+                <Rectangle2>
+                    <LittleRectangle2>
+                    </LittleRectangle2>
+                </Rectangle2>
             </AllRectangles>
         </Container>
     );
