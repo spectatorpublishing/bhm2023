@@ -7,6 +7,27 @@ const Container = styled.div` // container for all components
     width: 100vw;
     background: linear-gradient(#5F193E, #3F132e, #1D132b); 
 `;
+
+const HeaderDiv = styled.div`
+    color: white;
+    font-family: EB Garamond;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 91px;
+    letter-spacing: 0em;
+    text-align: left;
+`;
+
+const Header = styled.div`
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 91px;
+    text-transform: capitalize;
+`;
+
+
 const AllRectangles = styled.div`
   display: flex;
   flex-direction: column;
@@ -49,7 +70,6 @@ const LittleRectangle1 = styled.div`
 
 `;
 
-
 const Rectangle2 = styled(Rectangle)`
     background-color: #5F415B;
     height: 325px;
@@ -71,7 +91,6 @@ const LittleRectangle2 = styled.div`
     border-radius: 0px;
     align-items: center;
     margin-left: 400px;
-    /* margin-bottom: 1000px; */
 `;
 
 const ArticleInfo1= styled.div`
@@ -80,6 +99,8 @@ const ArticleInfo1= styled.div`
     margin: 10px;
     font-family: 'EB Garamond';
     text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
 `;
 const ArticleInfoTitle1 = styled(ArticleInfo1)`
     font-size: 30px;
@@ -93,9 +114,14 @@ const ArticleInfoAuthor1 = styled(ArticleInfo1)`
 const ArticleInfo2= styled.div`
     text-align: left;
     color: white;
-    margin: 10px;
     font-family: 'EB Garamond';
+    font-weight: 600;
     text-transform: capitalize;
+    height: 72px;
+    width: 393px;
+    left: 0px;
+    top: 40px;
+
 `;
 const ArticleInfoTitle2 = styled(ArticleInfo2)`
     font-size: 30px;
@@ -110,52 +136,21 @@ const Section = () => {
     return (
         <Container id = "section">
             <NavBar isSection/>
-            {/* <HeaderDiv><Header>UNIVERSITY</Header></HeaderDiv> */}
-            {/* <AllArticlesBox> */}
+            <HeaderDiv><Header>UNIVERSITY</Header></HeaderDiv>
             <AllRectangles>
-            <Rectangle1><ArticleInfo1><ArticleInfoTitle1>TITLE BLAH
-                </ArticleInfoTitle1><ArticleInfoAuthor1>BY BLAH BLAH</ArticleInfoAuthor1></ArticleInfo1><LittleRectangle1/></Rectangle1>
+            <Rectangle1><ArticleInfo1><ArticleInfoTitle1>This Article's Title
+                </ArticleInfoTitle1><ArticleInfoAuthor1>By Some Person's Name</ArticleInfoAuthor1></ArticleInfo1><LittleRectangle1/></Rectangle1>
 
 
-                <Rectangle2><ArticleInfo2><ArticleInfoTitle2>TITLE BLAH
-                </ArticleInfoTitle2><ArticleInfoAuthor2>BY BLAH BLAH</ArticleInfoAuthor2></ArticleInfo2><LittleRectangle2/></Rectangle2>
+                <Rectangle2><ArticleInfo2><ArticleInfoTitle2>This Article's Title
+                </ArticleInfoTitle2><ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2></ArticleInfo2><LittleRectangle2/></Rectangle2>
 
 
-            <Rectangle1><ArticleInfo1><ArticleInfoTitle1>TITLE BLAH
-                </ArticleInfoTitle1><ArticleInfoAuthor1>BY BLAH BLAH</ArticleInfoAuthor1></ArticleInfo1><LittleRectangle1/></Rectangle1>
-           
-
-                <Rectangle2><ArticleInfo2><ArticleInfoTitle2>TITLE BLAH
-                </ArticleInfoTitle2><ArticleInfoAuthor2>BY BLAH BLAH</ArticleInfoAuthor2></ArticleInfo2><LittleRectangle2/></Rectangle2>
-            {/* <Rectangle1 />
-            <Rectangle2 />
-            <Rectangle1 />
-            <Rectangle2 />
-            <Rectangle1 />
-            <Rectangle2 /> */}
+            <Rectangle1><ArticleInfo1><ArticleInfoTitle1>This Article's Title
+                </ArticleInfoTitle1><ArticleInfoAuthor1>By Some Person's Name</ArticleInfoAuthor1></ArticleInfo1><LittleRectangle1/></Rectangle1>
+                <Rectangle2><ArticleInfo2><ArticleInfoTitle2>This Article's Title
+                </ArticleInfoTitle2><ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2></ArticleInfo2><LittleRectangle2/></Rectangle2>
             </AllRectangles>
-
-                {/* <ArticleInfo1>
-                    <BigBox1>
-                    <ArticleTitle>Title</ArticleTitle>
-                    <ArticleAuthor>By: Author</ArticleAuthor>
-                    <View1>
-                        <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></img>
-                    </View1>
-                    <LittleBox1>                
-                    </LittleBox1></BigBox1>
-                </ArticleInfo1>
-
-                <ArticleInfo2>
-                    <BigBox2>
-                    <ArticleTitle>Title</ArticleTitle>
-                    <ArticleAuthor>By: Author</ArticleAuthor>
-                    <View2>
-                        <img src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></img>
-                    </View2>
-                        <LittleBox2></LittleBox2></BigBox2>
-                </ArticleInfo2> */}
-            {/* </AllArticlesBox> */}
         </Container>
     );
 };
