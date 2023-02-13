@@ -25,6 +25,7 @@ const Header = styled.div`
     font-size: 70px;
     line-height: 91px;
     text-transform: capitalize;
+    
 `;
 
 
@@ -55,6 +56,7 @@ const Rectangle1 = styled(Rectangle)`
     border-radius: 0px;
     margin: 10px;
     margin-left: 100px;
+    z-index: 1;
 `;
 
 const LittleRectangle1 = styled.div`
@@ -67,7 +69,7 @@ const LittleRectangle1 = styled.div`
     align-items: center;
     margin-left: 150px;
     margin-top: 100px;
-
+    z-index: 2;
 `;
 
 const Rectangle2 = styled(Rectangle)`
@@ -80,6 +82,7 @@ const Rectangle2 = styled(Rectangle)`
     margin: 10px;
     margin-left: 225px;
     justify-content: right;
+    z-index: 1;
 `;
 
 const LittleRectangle2 = styled.div`
@@ -91,24 +94,26 @@ const LittleRectangle2 = styled.div`
     border-radius: 0px;
     align-items: center;
     margin-left: 400px;
+    margin-top: 10px;
+    z-index: 2;
 `;
 
 const ArticleInfo1= styled.div`
     text-align: right;
     color: white;
-    margin: 10px;
     font-family: 'EB Garamond';
     text-transform: capitalize;
     font-weight: 600;
     position: relative;
+    margin-top: 100px;
+    z-index: 10;
 `;
 const ArticleInfoTitle1 = styled(ArticleInfo1)`
-    font-size: 30px;
+    font-size: 40px;
 `;
 const ArticleInfoAuthor1 = styled(ArticleInfo1)`
-    margin: 10px;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 `;
 
 const ArticleInfo2= styled.div`
@@ -121,15 +126,17 @@ const ArticleInfo2= styled.div`
     width: 393px;
     left: 0px;
     top: 40px;
+    z-index: 10;
+    margin-top: 50px;
+    margin-right: 300px;
 
 `;
 const ArticleInfoTitle2 = styled(ArticleInfo2)`
-    font-size: 30px;
+    font-size: 40px;
 `;
 const ArticleInfoAuthor2 = styled(ArticleInfo2)`
-    margin: 10px;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 `;
 const Section = () => {
 
@@ -141,15 +148,19 @@ const Section = () => {
             <Rectangle1><ArticleInfo1><ArticleInfoTitle1>This Article's Title
                 </ArticleInfoTitle1><ArticleInfoAuthor1>By Some Person's Name</ArticleInfoAuthor1></ArticleInfo1><LittleRectangle1/></Rectangle1>
 
-
-                <Rectangle2><ArticleInfo2><ArticleInfoTitle2>This Article's Title
-                </ArticleInfoTitle2><ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2></ArticleInfo2><LittleRectangle2/></Rectangle2>
+                <ArticleInfo2><ArticleInfoTitle2>This Article's Title
+                </ArticleInfoTitle2><ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2></ArticleInfo2>
+                <Rectangle2><LittleRectangle2/></Rectangle2>
 
 
             <Rectangle1><ArticleInfo1><ArticleInfoTitle1>This Article's Title
                 </ArticleInfoTitle1><ArticleInfoAuthor1>By Some Person's Name</ArticleInfoAuthor1></ArticleInfo1><LittleRectangle1/></Rectangle1>
-                <Rectangle2><ArticleInfo2><ArticleInfoTitle2>This Article's Title
-                </ArticleInfoTitle2><ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2></ArticleInfo2><LittleRectangle2/></Rectangle2>
+            
+                <ArticleInfo2><ArticleInfoTitle2>This Article's Title
+                </ArticleInfoTitle2><ArticleInfoAuthor2>By Some Person's Name</ArticleInfoAuthor2></ArticleInfo2>
+                <Rectangle2><LittleRectangle2/></Rectangle2>
+
+
             </AllRectangles>
         </Container>
     );
