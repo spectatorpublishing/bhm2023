@@ -114,15 +114,15 @@ const ArticleAuthor1= styled(ArticleInfo1)`
 
 
 const MainImage2 = styled.div`
-    height: 90%;
+    height: 55%;
     position: absolute;
     width: 350px;
     background-position: center;
     background-size: cover;
     background-image: url(${props => props.src});
-    z-index: 2;
-    top: -25px;
-    left: 250px;
+    z-index: 10;
+    top: 25px;
+    left: 25px;
     @media screen and (max-width: 768px) {
         width: 10px;
     } 
@@ -134,14 +134,21 @@ const Rectangle2 = styled.div`
     height:356px;
     margin-top:34px;
     margin-left:121px;
+    @media screen and (max-width: 768px) {
+        width: 10px;
+    } 
 `;
 
 const OffSetRectangle2 = styled.div`
     background: #70586D;
+    position: absolute;
     height: 293px;
     width: 387px;
-    left: 1000px;
-    top: 760px;
+    left: 375px;
+    top: -50px;
+    @media screen and (max-width: 768px) {
+        width: 10px;
+    } 
 `;
 
 const Column2 = styled.div`
