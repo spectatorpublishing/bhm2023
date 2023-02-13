@@ -192,4 +192,12 @@ const Section = () => {
     );
 };
 
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
 export default Section;
+
+
