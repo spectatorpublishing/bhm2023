@@ -38,6 +38,8 @@ const AllRectangles = styled.div`
   height: 50%;
   padding: 110px 350px 28px 45px;
   margin-right: 300px;
+    @media screen and (max-width: 768px) {
+    }
 `;
 
 const Rectangle = styled.div`
@@ -53,19 +55,26 @@ const Rectangle1 = styled(Rectangle)`
     width: 887px;
     left: 0px;
     top: 0px;
-    border-radius: 0px;
     margin: 10px;
     margin-left: 100px;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+        height: 182px;
+        width: 380px;
+        margin-left:380px;
+    }
+
 `;
 
 const Column1 = styled.div`
     width: 50%;
     background-color: #7A5470;
-    border: 2px solid black;
+    border: 2px #7A5470;
     position: relative;
-    border-radius: 0px;
     border-color: #7A5470;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 const MainImage1 = styled.div`
@@ -78,6 +87,13 @@ const MainImage1 = styled.div`
     z-index: 2;
     top: 25px;
     left: 25px;
+    @media screen and (max-width: 768px) {
+        height: 103.80228424072266px;
+        width: 70%;
+        left: 7.658203125px;
+        top: 23.1826171875px; 
+
+    }
 `;
 
 const OffSetRectangle1 = styled.div`
@@ -89,7 +105,10 @@ const OffSetRectangle1 = styled.div`
     left: 48px;
     top: 150px;
     @media screen and (max-width: 768px) {
-        width: 100px;
+        height: 101.38021850585938px;
+        width: 123.5020751953125px;
+        left: 40.84765625px;
+        top: 55.01513671875px;
     } 
 `;
 
@@ -109,22 +128,13 @@ const ArticleAuthor1= styled(ArticleInfo1)`
     font-size: 16px;
 `;
 
-
 const MainImage2 = styled.div`
     height: 55%;
     width: 350px;
     background-image: url(${props => props.src});
     z-index: 1000;
     @media screen and (max-width: 768px) {
-        height: 55%;
-        position: absolute;
-        width: 350px;
-        background-position: center;
-        background-size: cover;
-        background-image: url(${props => props.src});
-        z-index: 2;
-        top: 25px;
-        left: 25px;
+        display: none;
     } 
 `;
 
@@ -134,19 +144,9 @@ const Rectangle2 = styled.div`
     height:356px;
     margin-top:34px;
     margin-left:121px;
-    @media screen and (max-width: 768px){
-        display: flex;
-        background-color: #7A5470;
-        height: 526px;
-        width: 887px;
-        left: 0px;
-        top: 0px;
-        border-radius: 0px;
-        margin: 10px;
-        margin-left: 100px;
-        z-index: 1;
-        
-    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    } 
 `;
 
 const OffSetRectangle2 = styled.div`
@@ -157,13 +157,7 @@ const OffSetRectangle2 = styled.div`
     left: 375px;
     top: -50px;
     @media screen and (max-width: 768px) {
-        background: #907388;
-        height: 55%;
-        position: absolute;
-        width: 350px;
-        z-index: 1;
-        left: 48px;
-        top: 150px;
+        display: none;
     } 
 `;
 
@@ -174,6 +168,9 @@ const Column2 = styled.div`
     border: 2px;
     position: relative;
     border-radius: 0px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const ArticleInfo2 = styled.div`
