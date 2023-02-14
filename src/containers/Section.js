@@ -78,9 +78,6 @@ const MainImage1 = styled.div`
     z-index: 2;
     top: 25px;
     left: 25px;
-    @media screen and (max-width: 768px) {
-        width: 10px;
-    } 
 `;
 
 const OffSetRectangle1 = styled.div`
@@ -92,7 +89,7 @@ const OffSetRectangle1 = styled.div`
     left: 48px;
     top: 150px;
     @media screen and (max-width: 768px) {
-        width: 10px;
+        width: 100px;
     } 
 `;
 
@@ -115,16 +112,19 @@ const ArticleAuthor1= styled(ArticleInfo1)`
 
 const MainImage2 = styled.div`
     height: 55%;
-    position: absolute;
     width: 350px;
-    background-position: center;
-    background-size: cover;
     background-image: url(${props => props.src});
-    z-index: 10;
-    top: 25px;
-    left: 25px;
+    z-index: 1000;
     @media screen and (max-width: 768px) {
-        width: 10px;
+        height: 55%;
+        position: absolute;
+        width: 350px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(${props => props.src});
+        z-index: 2;
+        top: 25px;
+        left: 25px;
     } 
 `;
 
@@ -134,9 +134,19 @@ const Rectangle2 = styled.div`
     height:356px;
     margin-top:34px;
     margin-left:121px;
-    @media screen and (max-width: 768px) {
-        width: 10px;
-    } 
+    @media screen and (max-width: 768px){
+        display: flex;
+        background-color: #7A5470;
+        height: 526px;
+        width: 887px;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        margin: 10px;
+        margin-left: 100px;
+        z-index: 1;
+        
+    }
 `;
 
 const OffSetRectangle2 = styled.div`
@@ -147,7 +157,13 @@ const OffSetRectangle2 = styled.div`
     left: 375px;
     top: -50px;
     @media screen and (max-width: 768px) {
-        width: 10px;
+        background: #907388;
+        height: 55%;
+        position: absolute;
+        width: 350px;
+        z-index: 1;
+        left: 48px;
+        top: 150px;
     } 
 `;
 
@@ -175,8 +191,6 @@ const ArticleTitle2= styled(ArticleInfo2)`
 const ArticleAuthor2= styled(ArticleInfo2)`
     font-size: 16px;
 `;
-
-
 
 const Section = () => {
 
@@ -245,6 +259,8 @@ const Section = () => {
         </Container>
     );
 };
+
+
 
 
   
