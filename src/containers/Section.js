@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBar from '../components/NavBar';
+import MobileNavBar from '../components/MobileNavBar';
 
 const SectionWrapper = styled.div`
      height: 100vh;
@@ -13,6 +14,7 @@ const Section = () => {
     return (
         <SectionWrapper>
             <NavBar isSection/>
+            <MobileNavBar/>
         </SectionWrapper>
     );
 };

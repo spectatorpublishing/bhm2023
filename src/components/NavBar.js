@@ -54,7 +54,7 @@ const Bullet = styled.span`
     background-color: #EAD1D1;
     border-radius: 50%;
     margin-top: 0.38rem;
-`
+`;
 
 
 const NavBar = ({isSection}) => {
