@@ -134,8 +134,10 @@ const ArticleInfo1 = styled.div`
     margin-top: 30px;
     margin-left: -15px;
     @media screen and (max-width: 768px) {
-        margin-right: -50px;
+        margin-right: -600px;
+        position: relative;
         margin-top: 10px;
+        margin-left:-10px;
     }
 `;
 
