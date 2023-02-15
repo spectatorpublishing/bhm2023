@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBar from '../components/NavBar';
+import MobileNavBar from '../components/MobileNavBar';
 
 
 const Container = styled.div` // container for all components
@@ -252,8 +253,7 @@ const ArticleAuthor2= styled(ArticleInfo2)`
     }
 `;
 
-const Section = () => {
-
+const Section = ({header}) => {
     return (
         <Container id = "section">
             <NavBar isSection/>

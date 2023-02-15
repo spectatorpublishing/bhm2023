@@ -54,24 +54,22 @@ const Bullet = styled.span`
     background-color: #EAD1D1;
     border-radius: 50%;
     margin-top: 0.38rem;
-`
+`;
 
 
 const NavBar = ({isSection}) => {
-    const [currentSection, setSection] = useState("/");
     return(
         <NavWrapper>
             <VertNav isSection={isSection}>
             {sections.map((section, index) => (
                 <NavHashLink smooth to={section.url}>
-                    <Tab currentSection = {currentSection == section.url} onClick = {() => setSection(section.url)} key={index}>
-                        <Bullet></Bullet><NavText>{section.title} {currentSection==section.url}</NavText>  
+                    <Tab currentSection = {window.location.pathname == section.url} key={index}>
+                        <Bullet></Bullet><NavText>{section.title}</NavText>  
                     </Tab>
                 </NavHashLink>
             ))}
             </VertNav>
         </NavWrapper>
-        
     );
 };
 

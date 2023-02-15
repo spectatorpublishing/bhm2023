@@ -6,20 +6,30 @@ import { MdClose } from 'react-icons/md';
 import { IconContext } from 'react-icons/lib';
 import {sections} from '../data/sections';
 
+
 const NavWrap = styled.div`
     color: white;
     position: absolute;
     top: 3rem;
     right: 0rem;
+    a {
+        text-decoration: none;
+    }
+
+    @media only screen and (min-width: 1023px){
+        display: none;
+    }
+
     @media only screen and (max-width: 1023px){
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
     }
 `;
 
 const MobileNav = styled.div`
     display: none;
-    padding: 0.25rem;
+    
+    padding: 0rem 1rem;
     @media only screen and (max-width: 1023px){
         display: flex;
         flex-direction: row;
@@ -28,24 +38,28 @@ const MobileNav = styled.div`
 
 const MobileMenu = styled.div`
     display: flex;
-    width: 85%;
-     padding: 1%;
-     padding-right: 1%;
-     text-align: right;
-     font-family: 'Poppins', sans-serif;
-     font-style: normal;
-     font-weight: 800;
-     font-size: 20px;
-     line-height: 32px;
-     background-color: #92718A;
-     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-     border-radius: 20px;
-     color: #F8BEB9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    margin: 2rem 1rem;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color: #92718A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #F8BEB9;
 
     @media only screen and (max-width: 1023px){
         display: flex;
         flex-direction: column;
     }
+`;
+
+const MobileWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
 `;
 
 const MenuIcon = styled.div`
@@ -59,21 +73,37 @@ const MenuIcon = styled.div`
 `;
 
 const Link = styled.a`
-    font-size: 20px;
-    padding: 1%;
-    color: white;
+    display: flex;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    margin-left: auto;
     background-color: #92718A;
-    border: 0px;
-    border-radius: 3px;
+    border-radius: 20px;
+    color: ${props => props.currentSection ? '#F8BEB9' : 'white'};
+    font-weight: ${props => props.currentSection ? 700 : 400};
+
     &:hover{
          color: #F8BEB9;
          cursor:pointer;
-         font-weight: bold;
     }
 `;
 
+const NavText = styled.div`
+    margin-right: 10px;
+    font-style: normal;
+    text-transform: uppercase;
+`;
+
+const Bullet = styled.span`
+    width: 5px;
+    height: 5px;
+    background-color: #EAD1D1;
+    border-radius: 50%;
+    margin: auto 0rem;
+`;
+
 const MobileNavBar = () => {
-    const [currentSection, setSection] = useState("/");
     const [show, setToggle] = useState(false);
 
     return (
@@ -86,18 +116,20 @@ const MobileNavBar = () => {
                 </MenuIcon>
             </MobileNav>
             <MobileMenu>
-                {sections.map((section, index) => {
-                    return (
-                        <>
-                            {(show) ?
-                                <NavHashLink smooth to={section.url}>
-                                    <Link currentSection = {currentSection == section.url} onClick={() => setSection(section.url)} key={index}>
-                                        {section.title}
-                                    </Link>
-                                </NavHashLink> : null}
-                        </>
-                    )
-                })}
+                <MobileWrapper>
+                    {sections.map((section, index) => {
+                        return (
+                            <>
+                                {(show) ?
+                                    <NavHashLink smooth to={section.url} style={{marginTop: '6`px'}}>
+                                        <Link currentSection = {window.location.pathname == section.url} key={index} onClick={() => setToggle(!show)}>
+                                            <NavText>{section.title}</NavText><Bullet></Bullet>
+                                        </Link>
+                                    </NavHashLink> : null}
+                            </>
+                        )
+                    })}
+                </MobileWrapper>
             </MobileMenu>
         </NavWrap>
     );

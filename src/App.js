@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { React, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 import Home from './containers/Home';
@@ -11,6 +11,12 @@ import { city_news_articles } from './data/articles';
 
 
 const App = () => {
+  const [currentSection, setSection] = useState("/");
+  
+  useEffect(() => {
+    setSection(window.location.pathname);
+  },[window.location.pathname])
+
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>

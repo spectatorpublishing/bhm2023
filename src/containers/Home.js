@@ -75,7 +75,6 @@ const Home = () => {
                     <Title>BLACK HISTORY<br></br>MONTH</Title>
                 </Wrapper>
                 <NavBar/>
-                <MobileNavBar/>
                 <Letter/>
                 <Credits/>
         </HomeContainer>
