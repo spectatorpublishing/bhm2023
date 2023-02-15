@@ -80,7 +80,6 @@ const Link = styled.a`
     &:hover{
          color: #F8BEB9;
          cursor:pointer;
-         font-weight: bold;
     }
 `;
 
