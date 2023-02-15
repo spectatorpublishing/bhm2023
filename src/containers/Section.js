@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 
 const Container = styled.div` // container for all components
     width: 100%;
+    height: 100%;
     background: linear-gradient(180deg, #945F80 0%, #10071D 100%), #3F132E; 
 `;
 
