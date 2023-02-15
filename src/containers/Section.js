@@ -9,12 +9,12 @@ const SectionWrapper = styled.div`
      background: linear-gradient(180deg, #945F80 0%, #10071D 100%), #3F132E;
 `;
 
-const Section = () => {
-
+const Section = ({header}) => {
     return (
         <SectionWrapper>
             <NavBar isSection/>
             <MobileNavBar/>
+            {header}
         </SectionWrapper>
     );
 };

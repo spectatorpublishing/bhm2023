@@ -58,20 +58,18 @@ const Bullet = styled.span`
 
 
 const NavBar = ({isSection}) => {
-    const [currentSection, setSection] = useState("/");
     return(
         <NavWrapper>
             <VertNav isSection={isSection}>
             {sections.map((section, index) => (
                 <NavHashLink smooth to={section.url}>
-                    <Tab currentSection = {currentSection == section.url} onClick = {() => setSection(section.url)} key={index}>
-                        <Bullet></Bullet><NavText>{section.title} {currentSection==section.url}</NavText>  
+                    <Tab currentSection = {window.location.pathname == section.url} key={index}>
+                        <Bullet></Bullet><NavText>{section.title}</NavText>  
                     </Tab>
                 </NavHashLink>
             ))}
             </VertNav>
         </NavWrapper>
-        
     );
 };
 
