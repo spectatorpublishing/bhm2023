@@ -4,8 +4,8 @@ import NavBar from '../components/NavBar';
 
 
 const Container = styled.div` // container for all components
-    width: 100vw;
-    background: linear-gradient(#5F193E, #3F132e, #1D132b); 
+    width: 100%;
+    background: linear-gradient(180deg, #945F80 0%, #10071D 100%), #3F132E; 
 `;
 
 const HeaderDiv = styled.div`
