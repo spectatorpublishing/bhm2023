@@ -119,7 +119,7 @@ const MobileNavBar = () => {
                         return (
                             <>
                                 {(show) ?
-                                    <NavHashLink smooth to={section.url} style={{marginTop: '6px'}}>
+                                    <NavHashLink smooth to={section.url} style={{marginTop: '6`px'}}>
                                         <Link currentSection = {currentSection == section.url} onClick={() => setSection(section.url)} key={index}>
                                             <NavText>{section.title}</NavText><Bullet></Bullet>
                                         </Link>
