@@ -35,16 +35,18 @@ const Header = styled.div`
 const AllRectangles = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 400px;
   position: relative;
-  height: 50%;
-  padding: 110px 350px 28px 45px;
-  margin-right: 300px;
+  height: 100%;
+  padding-top: 100px;
+  padding-right: 385px;
     @media screen and (max-width: 768px) {
         margin: 0px;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
