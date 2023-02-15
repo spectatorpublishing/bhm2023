@@ -119,6 +119,8 @@ const ArticleInfo1 = styled.div`
     flex-direction: column;
     font-family: 'EB Garamond';
     text-transform: capitalize;
+    font-style: normal;
+    font-weight: 600;
     color: white;
     margin-right: 100px;
     margin-bottom: 0px;
@@ -202,6 +204,8 @@ const ArticleInfo2 = styled.div`
     flex-direction: column;
     font-family: 'EB Garamond';
     text-transform: capitalize;
+    font-style: normal;
+    font-weight: 600;
     position: relative;
     color: white;
     margin-left: -50px;
