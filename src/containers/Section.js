@@ -138,8 +138,10 @@ const ArticleTitle1= styled(ArticleInfo1)`
 
 const ArticleAuthor1= styled(ArticleInfo1)`
     font-size: 16px;
+    margin-top: 0px;
     @media screen and (max-width: 768px) {
         font-size: 8px;
+        margin-top: 0px;
     }
 
 `;
