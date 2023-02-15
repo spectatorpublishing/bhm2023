@@ -17,6 +17,11 @@ const HeaderDiv = styled.div`
     letter-spacing: 0em;
     text-align: left;
     display: flex;
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 const Header = styled.div`
