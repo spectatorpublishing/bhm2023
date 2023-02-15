@@ -68,7 +68,8 @@ const Rectangle1 = styled(Rectangle)`
     @media screen and (max-width: 768px) {
         height: 182px;
         width: 380px;
-        margin-left:400px;
+        justify-content: center;
+        margin-left: 0px;
     }
 `;
 
