@@ -1,108 +1,79 @@
 import React from "react";
 import styled from "styled-components";
 
-const Rectangle = styled.div`
-  height: 100%;
-  width: 100%;
-  margin: 15px;
-`;
-
-const LeftArticleWrapper = styled(Rectangle)`
+const LeftArticleWrapper = styled.div`
+    max-width: 70vw;
+    margin: 15px;
     display: flex;
     background-color: #7A5470;
-    height: 526px;
-    width: 887px;
-    left: 0px;
-    top: 0px;
-    margin: 10px;
-    margin-left: -275px;
     z-index: 1;
+
     @media screen and (max-width: 768px) {
-        height: 182px;
-        width: 300px;
+        width: 100%;
+        max-width: 90vw;
         justify-content: center;
-        margin-left: 0px;
+        margin: 10px;
     }
 `;
 
-const Column1 = styled.div`
-    width: 50%;
-    background-color: #7A5470;
-    border: 2px #7A5470;
-    position: relative;
-    border-color: #7A5470;
+const Column = styled.div`
+    flex: 1;
+    height: fit-content;
     @media screen and (max-width: 768px) {
         width: 100%;
     }
 `;
 
-const MainImage1 = styled.div`
-    height: 55%;
-    position: absolute;
+const MainImage = styled.div`
     width: 350px;
-    background-position: center;
-    background-size: cover;
-    background-image: url(${props => props.src});
+    height: 350px;
     z-index: 2;
-    margin-top: 50px;
-    left: 25px;
+    margin: 150px 0px 75px 90px;
+    background: #907388;
+
+    img {
+        width: 100%;
+        height: 100%;
+        margin: -75px 0px 0px -75px;
+    }
+
+    @media screen and (max-width: 970px) {
+        width: 250px;
+        height: 250px;
+    }
+
     @media screen and (max-width: 768px) {
-        height: 103.80228424072266px;
-        width: 70%;
-        left: 7.658203125px;
-        top: 23.1826171875px; 
-        margin-top: 0px;
-        margin-left: 20px;
+        width: 30vw;
+        height: 30vw;
+        margin: 100px 0px 30px 90px;
+
+        img {
+            margin: -50px 0px 0px -50px;
+        }
     }
 `;
 
-const OffSetRectangle1 = styled.div`
-    background: #907388;
-    height: 55%;
-    position: absolute;
-    width: 350px;
-    z-index: 1;
-    margin-left: 100px;
-    top: 150px;
-    @media screen and (max-width: 768px) {
-            height: 101.38021850585938px;
-            width: 123.5020751953125px;
-            left: 40.84765625px;
-            top: 55.01513671875px;
-            margin-top: 5px;
-            margin-left: 20px;
-    } 
-`;
-
-const ArticleInfo1 = styled.div`
+const ArticleInfo = styled.div`
     display: flex;
     flex-direction: column;
+    z-index: 1;
+    width: fit-content;
+    margin: 2rem 1rem 0rem -1rem;
+    
     font-family: 'EB Garamond';
     text-transform: capitalize;
-    font-style: normal;
     font-weight: 600;
     color: white;
-    width: fit-content;
-    margin-right: 100px;
-    margin-bottom: 0px;
-    margin-top: 30px;
-    margin-left: -15px;
-    @media screen and (max-width: 768px) {
-        margin-right: -600px;
-        position: relative;
-        margin-top: 10px;
-        margin-left: 0px;
-    }
 `;
 
-const ArticleTitle1 = styled(ArticleInfo1)`
+const ArticleTitle = styled(ArticleInfo)`
     font-size: 40px;
     @media screen and (max-width: 768px) {
         font-size: 20px;
     }
 `;
 
-const ArticleAuthor1 = styled(ArticleInfo1)`
+const ArticleAuthor = styled(ArticleInfo)`
     font-size: 16px;
     margin-top: 0px;
     @media screen and (max-width: 768px) {
@@ -114,16 +85,17 @@ const ArticleAuthor1 = styled(ArticleInfo1)`
 const LeftArticle = ({ article }) => {
     return (
         <LeftArticleWrapper>
-            <Column1>
-                <MainImage1 src={article.image_url}></MainImage1>
-                <OffSetRectangle1></OffSetRectangle1>
-            </Column1>
-            <Column1>
-                <ArticleInfo1>
-                    <ArticleTitle1>{article.article_title}</ArticleTitle1>
-                    <ArticleAuthor1>By {article.article_authors}</ArticleAuthor1>
-                </ArticleInfo1>
-            </Column1>
+            <Column>
+                <MainImage>
+                    <img src={article.image_url}/>
+                </MainImage>
+            </Column>
+            <Column>
+                <ArticleInfo>
+                    <ArticleTitle>{article.article_title}</ArticleTitle>
+                    <ArticleAuthor>By {article.article_authors}</ArticleAuthor>
+                </ArticleInfo>
+            </Column>
         </LeftArticleWrapper>
     );
 }

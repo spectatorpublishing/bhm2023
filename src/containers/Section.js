@@ -29,7 +29,7 @@ const HeaderDiv = styled.div`
 const ArticlesContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     
     padding-top: 25px;
         @media screen and (max-width: 768px) {
@@ -49,7 +49,7 @@ const Section = ({ header, articles }) => {
             </HeaderDiv>
             <ArticlesContainer>
                 {articles.map((article, index) => (
-                    (index % 2 == 0) ? <RightArticle article={article} /> : <LeftArticle article={article} />
+                    (index % 2 == 0) ? <LeftArticle article={article} /> : <RightArticle article={article} />
                 ))}
             </ArticlesContainer>
         </Container>
