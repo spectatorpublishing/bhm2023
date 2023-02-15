@@ -40,8 +40,7 @@ const AllRectangles = styled.div`
   height: 400px;
   position: relative;
   height: 100%;
-  padding-top: 100px;
-  padding-right: 385px;
+  padding-top: 25px;
     @media screen and (max-width: 768px) {
         margin: 0px;
         display: flex;
@@ -64,7 +63,7 @@ const Rectangle1 = styled(Rectangle)`
     left: 0px;
     top: 0px;
     margin: 10px;
-    margin-left: 500px;
+    margin-left: -275px;
     z-index: 1;
     @media screen and (max-width: 768px) {
         height: 182px;
@@ -177,8 +176,8 @@ const Rectangle2 = styled.div`
     width: 683px;
     height:356px;
     margin-top:100px;
-    margin-left:535px;
-    margin-bottom: 50px;
+    margin-left:-237px;
+    margin-bottom: 25px;
     @media screen and (max-width: 768px) {
         display: none;
     } 
