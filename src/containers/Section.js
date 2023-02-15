@@ -63,7 +63,6 @@ const Rectangle1 = styled(Rectangle)`
         width: 380px;
         margin-left:400px;
     }
-
 `;
 
 const Column1 = styled.div`
@@ -121,9 +120,12 @@ const ArticleInfo1 = styled.div`
     font-family: 'EB Garamond';
     text-transform: capitalize;
     color: white;
+    margin-right: 100px;
+    margin-bottom: 0px;
     margin-top: 20px;
     @media screen and (max-width: 768px) {
-        
+        margin-right: -50px;
+        margin-top: 10px;
     }
 `;
 
@@ -132,7 +134,6 @@ const ArticleTitle1= styled(ArticleInfo1)`
     @media screen and (max-width: 768px) {
         font-size: 20px;
     }
-
 `;
 
 const ArticleAuthor1= styled(ArticleInfo1)`
@@ -195,6 +196,10 @@ const ArticleInfo2 = styled.div`
     font-family: 'EB Garamond';
     text-transform: capitalize;
     color: white;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
 `;
 
 const ArticleTitle2= styled(ArticleInfo2)`
@@ -202,7 +207,6 @@ const ArticleTitle2= styled(ArticleInfo2)`
     @media screen and (max-width: 768px) {
         display: none;
     }
-    
 `;
 
 const ArticleAuthor2= styled(ArticleInfo2)`
@@ -227,8 +231,8 @@ const Section = () => {
                 </Column1>
                 <Column1>
                     <ArticleInfo1> 
-                        <ArticleTitle1>Article Title </ArticleTitle1>
-                        <ArticleAuthor1>By Some Person's Name </ArticleAuthor1>
+                        <ArticleTitle1>Article Title</ArticleTitle1>
+                        <ArticleAuthor1>By Some Person's Name</ArticleAuthor1>
                     </ArticleInfo1>
                 </Column1>
             </Rectangle1>
@@ -236,8 +240,8 @@ const Section = () => {
             <Rectangle2>
                 <Column2>
                     <ArticleInfo2> 
-                        <ArticleTitle2>Article Title </ArticleTitle2>
-                        <ArticleAuthor2>By Some Person's Name </ArticleAuthor2>
+                        <ArticleTitle2>Article Title</ArticleTitle2>
+                        <ArticleAuthor2>By Some Person's Name</ArticleAuthor2>
                     </ArticleInfo2>
                 </Column2>               
                 <Column2>
@@ -254,8 +258,8 @@ const Section = () => {
                 </Column1>
                 <Column1>
                     <ArticleInfo1> 
-                        <ArticleTitle1>Article Title </ArticleTitle1>
-                        <ArticleAuthor1>By Some Person's Name </ArticleAuthor1>
+                        <ArticleTitle1>Article Title</ArticleTitle1>
+                        <ArticleAuthor1>By Some Person's Name</ArticleAuthor1>
                     </ArticleInfo1>
                 </Column1>
             </Rectangle1>
@@ -263,25 +267,19 @@ const Section = () => {
             <Rectangle2>
                 <Column2>
                     <ArticleInfo2> 
-                        <ArticleTitle2>Article Title </ArticleTitle2>
-                        <ArticleAuthor2>By Some Person's Name </ArticleAuthor2>
+                        <ArticleTitle2>Article Title</ArticleTitle2>
+                        <ArticleAuthor2>By Some Person's Name</ArticleAuthor2>
                     </ArticleInfo2>
                 </Column2>
                 <Column2>
                 <MainImage2 src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></MainImage2>
                     <OffSetRectangle2></OffSetRectangle2>
-                
                 </Column2>
-                
             </Rectangle2>
-
             </AllRectangles>
         </Container>
     );
 };
-
-
-
 
   
 export default Section;
