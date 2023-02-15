@@ -15,6 +15,11 @@ const NavWrap = styled.div`
     a {
         text-decoration: none;
     }
+
+    @media only screen and (min-width: 1023px){
+        display: none;
+    }
+
     @media only screen and (max-width: 1023px){
         display: flex;
         flex-direction: row;
@@ -44,6 +49,7 @@ const MobileMenu = styled.div`
     background-color: #92718A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F8BEB9;
+
     @media only screen and (max-width: 1023px){
         display: flex;
         flex-direction: column;
@@ -69,7 +75,7 @@ const MenuIcon = styled.div`
 const Link = styled.a`
     display: flex;
     font-size: 18px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     width: fit-content;
     margin-left: auto;
     background-color: #92718A;
@@ -94,7 +100,7 @@ const Bullet = styled.span`
     height: 5px;
     background-color: #EAD1D1;
     border-radius: 50%;
-    margin-top: .8rem;
+    margin: auto 0rem;
 `;
 
 const MobileNavBar = () => {
