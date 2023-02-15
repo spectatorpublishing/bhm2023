@@ -35,6 +35,7 @@ const MainImage = styled.div`
         width: 100%;
         height: 100%;
         margin: -75px 0px 0px -75px;
+        object-fit: cover;
     }
 
     @media screen and (max-width: 970px) {
