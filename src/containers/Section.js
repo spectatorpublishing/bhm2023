@@ -16,8 +16,6 @@ const HeaderDiv = styled.div`
     line-height: 91px;
     letter-spacing: 0em;
     text-align: left;
-    justify-content: center;
-    align-items: center;
     display: flex;
 `;
 
