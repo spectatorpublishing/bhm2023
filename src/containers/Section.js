@@ -56,7 +56,7 @@ const Rectangle1 = styled(Rectangle)`
     left: 0px;
     top: 0px;
     margin: 10px;
-    margin-left: 100px;
+    margin-left: 500px;
     z-index: 1;
     @media screen and (max-width: 768px) {
         height: 182px;
@@ -92,7 +92,7 @@ const MainImage1 = styled.div`
         left: 7.658203125px;
         top: 23.1826171875px; 
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
 `;
 
@@ -109,8 +109,8 @@ const OffSetRectangle1 = styled.div`
             width: 123.5020751953125px;
             left: 40.84765625px;
             top: 55.01513671875px;
-            margin-top: 0px;
-            margin-left: 0px;
+            margin-top: 5px;
+            margin-left: 20px;
     } 
 `;
 
@@ -162,7 +162,7 @@ const Rectangle2 = styled.div`
     width: 683px;
     height:356px;
     margin-top:34px;
-    margin-left:121px;
+    margin-left:500px;
     @media screen and (max-width: 768px) {
         display: none;
     } 
@@ -197,7 +197,10 @@ const ArticleInfo2 = styled.div`
     flex-direction: column;
     font-family: 'EB Garamond';
     text-transform: capitalize;
+    position: relative;
     color: white;
+    margin-left: -50px;
+    margin-top: 10px;
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -206,6 +209,7 @@ const ArticleInfo2 = styled.div`
 
 const ArticleTitle2= styled(ArticleInfo2)`
     font-size: 40px;
+    margin-top: 0px;
     @media screen and (max-width: 768px) {
         display: none;
     }
@@ -213,6 +217,7 @@ const ArticleTitle2= styled(ArticleInfo2)`
 
 const ArticleAuthor2= styled(ArticleInfo2)`
     font-size: 16px;
+    margin-top: 0px;
     @media screen and (max-width: 768px) {
         display: none;
     }
