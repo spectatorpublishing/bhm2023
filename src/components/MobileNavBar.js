@@ -16,14 +16,15 @@ const NavWrap = styled.div`
         text-decoration: none;
     }
     @media only screen and (max-width: 1023px){
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
     }
 `;
 
 const MobileNav = styled.div`
     display: none;
-    padding: 0.25rem;
+    
+    padding: 0rem 1rem;
     @media only screen and (max-width: 1023px){
         display: flex;
         flex-direction: row;
@@ -36,14 +37,10 @@ const MobileMenu = styled.div`
     top: 0;
     right: 0;
     z-index: 10;
-    margin: 2rem 1rem 1rem 1rem;
+    margin: 2rem 1rem;
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-style: normal;
     font-weight: 300;
-    line-height: 32px;
-    text-align: right;
     background-color: #92718A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #F8BEB9;
@@ -70,13 +67,16 @@ const MenuIcon = styled.div`
 `;
 
 const Link = styled.a`
+    display: flex;
     font-size: 18px;
-    padding-left: 50px;
-    margin-right: 35px;
-    color: white;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    margin-left: auto;
     background-color: #92718A;
-    border: 0px;
     border-radius: 20px;
+    color: ${props => props.currentSection ? '#F8BEB9' : 'white'};
+    font-weight: ${props => props.currentSection ? 700 : 400};
+
     &:hover{
          color: #F8BEB9;
          cursor:pointer;
@@ -84,14 +84,12 @@ const Link = styled.a`
 `;
 
 const NavText = styled.div`
-    display: inline;
     margin-right: 10px;
     font-style: normal;
     text-transform: uppercase;
 `;
 
 const Bullet = styled.span`
-    position:absolute;
     width: 5px;
     height: 5px;
     background-color: #EAD1D1;
@@ -100,7 +98,6 @@ const Bullet = styled.span`
 `;
 
 const MobileNavBar = () => {
-    const [currentSection, setSection] = useState("/");
     const [show, setToggle] = useState(false);
 
     return (
@@ -119,7 +116,7 @@ const MobileNavBar = () => {
                             <>
                                 {(show) ?
                                     <NavHashLink smooth to={section.url} style={{marginTop: '6`px'}}>
-                                        <Link currentSection = {currentSection == section.url} onClick={() => setSection(section.url)} key={index}>
+                                        <Link currentSection = {window.location.pathname == section.url} key={index} onClick={() => setToggle(!show)}>
                                             <NavText>{section.title}</NavText><Bullet></Bullet>
                                         </Link>
                                     </NavHashLink> : null}
