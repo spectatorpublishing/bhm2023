@@ -61,7 +61,7 @@ const Rectangle1 = styled(Rectangle)`
     @media screen and (max-width: 768px) {
         height: 182px;
         width: 380px;
-        margin-left:600px;
+        margin-left:400px;
     }
 
 `;
@@ -85,14 +85,15 @@ const MainImage1 = styled.div`
     background-size: cover;
     background-image: url(${props => props.src});
     z-index: 2;
-    top: 25px;
+    margin-top: 50px;
     left: 25px;
     @media screen and (max-width: 768px) {
         height: 103.80228424072266px;
         width: 70%;
         left: 7.658203125px;
         top: 23.1826171875px; 
-
+        margin-top: 0px;
+        margin-left: 0px;
     }
 `;
 
@@ -102,13 +103,15 @@ const OffSetRectangle1 = styled.div`
     position: absolute;
     width: 350px;
     z-index: 1;
-    left: 48px;
+    margin-left: 100px;
     top: 150px;
     @media screen and (max-width: 768px) {
-        height: 101.38021850585938px;
-        width: 123.5020751953125px;
-        left: 40.84765625px;
-        top: 55.01513671875px;
+            height: 101.38021850585938px;
+            width: 123.5020751953125px;
+            left: 40.84765625px;
+            top: 55.01513671875px;
+            margin-top: 0px;
+            margin-left: 0px;
     } 
 `;
 
@@ -118,14 +121,26 @@ const ArticleInfo1 = styled.div`
     font-family: 'EB Garamond';
     text-transform: capitalize;
     color: white;
+    margin-top: 20px;
+    @media screen and (max-width: 768px) {
+        
+    }
 `;
 
 const ArticleTitle1= styled(ArticleInfo1)`
     font-size: 40px;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
+
 `;
 
 const ArticleAuthor1= styled(ArticleInfo1)`
     font-size: 16px;
+    @media screen and (max-width: 768px) {
+        font-size: 8px;
+    }
+
 `;
 
 const MainImage2 = styled.div`
@@ -133,6 +148,7 @@ const MainImage2 = styled.div`
     width: 350px;
     background-image: url(${props => props.src});
     z-index: 1000;
+    margin-top: 200px;
     @media screen and (max-width: 768px) {
         display: none;
     } 
@@ -183,10 +199,17 @@ const ArticleInfo2 = styled.div`
 
 const ArticleTitle2= styled(ArticleInfo2)`
     font-size: 40px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    
 `;
 
 const ArticleAuthor2= styled(ArticleInfo2)`
     font-size: 16px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const Section = () => {
