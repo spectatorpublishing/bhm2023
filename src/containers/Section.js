@@ -16,6 +16,9 @@ const HeaderDiv = styled.div`
     line-height: 91px;
     letter-spacing: 0em;
     text-align: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 `;
 
 const Header = styled.div`
@@ -25,13 +28,14 @@ const Header = styled.div`
     font-size: 70px;
     line-height: 91px;
     text-transform: capitalize;
+    justify-content: center;
     
 `;
 
 const AllRectangles = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 400px;
   position: relative;
@@ -39,6 +43,8 @@ const AllRectangles = styled.div`
   padding: 110px 350px 28px 45px;
   margin-right: 300px;
     @media screen and (max-width: 768px) {
+        margin: 0px;
+        display: flex;
     }
 `;
 
@@ -149,14 +155,15 @@ const ArticleAuthor1= styled(ArticleInfo1)`
 `;
 
 const MainImage2 = styled.div`
-    height: 55%;
+    height: 250px;
     position: absolute;
+    margin-left: 300px;
     width: 350px;
+    margin-top: -150px;
     background-position: center;
     background-size: cover;
     background-image: url(${props => props.src});
     z-index: 2;
-    margin-top: 50px;
     left: 25px;
     @media screen and (max-width: 768px) {
         display: none;
@@ -167,8 +174,9 @@ const Rectangle2 = styled.div`
     background: #5F415B;
     width: 683px;
     height:356px;
-    margin-top:34px;
-    margin-left:500px;
+    margin-top:100px;
+    margin-left:535px;
+    margin-bottom: 50px;
     @media screen and (max-width: 768px) {
         display: none;
     } 
@@ -209,7 +217,7 @@ const ArticleInfo2 = styled.div`
     position: relative;
     color: white;
     margin-left: -50px;
-    margin-top: 5px;
+    margin-top: px;
     @media screen and (max-width: 768px) {
         display: none;
     }
