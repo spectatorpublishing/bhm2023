@@ -209,7 +209,7 @@ const ArticleInfo2 = styled.div`
     position: relative;
     color: white;
     margin-left: -50px;
-    margin-top: 0px;
+    margin-top: 5px;
     @media screen and (max-width: 768px) {
         display: none;
     }
