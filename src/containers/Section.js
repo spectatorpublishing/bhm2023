@@ -148,10 +148,14 @@ const ArticleAuthor1= styled(ArticleInfo1)`
 
 const MainImage2 = styled.div`
     height: 55%;
+    position: absolute;
     width: 350px;
+    background-position: center;
+    background-size: cover;
     background-image: url(${props => props.src});
-    z-index: 1000;
-    margin-top: 200px;
+    z-index: 2;
+    margin-top: 50px;
+    left: 25px;
     @media screen and (max-width: 768px) {
         display: none;
     } 
@@ -175,6 +179,7 @@ const OffSetRectangle2 = styled.div`
     width: 387px;
     left: 375px;
     top: -50px;
+    z-index: 1;
     @media screen and (max-width: 768px) {
         display: none;
     } 
@@ -200,11 +205,10 @@ const ArticleInfo2 = styled.div`
     position: relative;
     color: white;
     margin-left: -50px;
-    margin-top: 10px;
+    margin-top: 0px;
     @media screen and (max-width: 768px) {
         display: none;
     }
-
 `;
 
 const ArticleTitle2= styled(ArticleInfo2)`
@@ -279,7 +283,7 @@ const Section = () => {
                     </ArticleInfo2>
                 </Column2>
                 <Column2>
-                <MainImage2 src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></MainImage2>
+                    <MainImage2 src="https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTk0OTA1OTY4ODg1MTE0Mzky/hero-crop-gettyimages-459534214.jpg"></MainImage2>
                     <OffSetRectangle2></OffSetRectangle2>
                 </Column2>
             </Rectangle2>
