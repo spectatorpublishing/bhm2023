@@ -131,7 +131,8 @@ const ArticleInfo1 = styled.div`
     color: white;
     margin-right: 100px;
     margin-bottom: 0px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: -15px;
     @media screen and (max-width: 768px) {
         margin-right: -50px;
         margin-top: 10px;
