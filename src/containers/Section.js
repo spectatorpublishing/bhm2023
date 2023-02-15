@@ -33,7 +33,9 @@ const Header = styled.div`
     line-height: 91px;
     text-transform: capitalize;
     justify-content: center;
-    
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
 `;
 
 const AllRectangles = styled.div`
@@ -71,7 +73,7 @@ const Rectangle1 = styled(Rectangle)`
     z-index: 1;
     @media screen and (max-width: 768px) {
         height: 182px;
-        width: 380px;
+        width: 300px;
         justify-content: center;
         margin-left: 0px;
     }
@@ -134,6 +136,7 @@ const ArticleInfo1 = styled.div`
     font-style: normal;
     font-weight: 600;
     color: white;
+    width: fit-content;
     margin-right: 100px;
     margin-bottom: 0px;
     margin-top: 30px;
@@ -142,7 +145,7 @@ const ArticleInfo1 = styled.div`
         margin-right: -600px;
         position: relative;
         margin-top: 10px;
-        margin-left:-10px;
+        margin-left: 0px;
     }
 `;
 
