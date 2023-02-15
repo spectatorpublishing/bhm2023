@@ -16,14 +16,16 @@ const HeaderDiv = styled.div`
     font-family: EB Garamond;
     font-size: 70px;
     font-weight: 600;
-    text-align: left;
     padding: 2rem 4rem;
     display: flex;
     text-transform: capitalize;
 
     @media screen and (max-width: 768px) {
+        width: fit-content;
         margin: 0rem auto;
         font-size: 40px;
+        padding: 1rem 1rem;
+        text-align: center;
     }
 `;
 
