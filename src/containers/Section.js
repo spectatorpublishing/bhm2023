@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar';
 import MobileNavBar from '../components/MobileNavBar';
 import LeftArticle from '../components/LeftArticle';
 import RightArticle from '../components/RightArticle';
+import SpecLogoHeader from '../components/SpecLogoHeader';
 
 const Container = styled.div`
     min-height: 100vh;
@@ -42,6 +43,7 @@ const ArticlesContainer = styled.div`
 const Section = ({ header, articles }) => {
     return (
         <Container>
+            <SpecLogoHeader/>
             <NavBar isSection />
             <MobileNavBar />
             <HeaderDiv>

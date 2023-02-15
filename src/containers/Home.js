@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
 import bhm from './bhm.JPG';
+import SpecLogoHeader from '../components/SpecLogoHeader';
 
 const HomeContainer = styled.div`
     width: 100%;
@@ -13,28 +14,6 @@ const HomeContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-`;
-
-const SpecLogo = styled.div`
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin-top: 3.813rem;
-    margin-bottom: 1.75rem;
-`;
-
-const Image = styled.img`
-    display: block;
-    width: 24.375%;
-    height: auto;
-`;
-
-const Line = styled.div`
-    width: 93.75%;
-    height: 0.063rem;
-    background-color: white;
-    margin-bottom: 3.75rem;
-    align-self: center;
 `;
 
 const Wrapper =styled.div`
@@ -67,9 +46,8 @@ const Home = () => {
 
     return (
         <HomeContainer>
-                <SpecLogo><Image src = "https://spec-imagehosting.s3.amazonaws.com/CDSwhitemasthead.png" alt = "Columbia Spectator logo" ></Image></SpecLogo>
+                <SpecLogoHeader/>
                 <MobileNavBar/>
-                <Line></Line>
                 <Wrapper>
                     <Photo><img src = {bhm} alt = "black history month graphic" width = "100%"></img></Photo>
                     <Title>BLACK HISTORY<br></br>MONTH</Title>
