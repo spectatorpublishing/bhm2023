@@ -10,11 +10,13 @@ const NavWrapper = styled.div`
     @media only screen and (max-width: 1023px){
         display: none;
     }
+    top:0;
+    position:${props => props.isSection ? 'sticky' : ''};;
 `;
 
 const VertNav = styled.div`
-    right: 5.5vw;
-    top:190px;
+    right: 4vw;
+    top:${props => props.isSection ? '2.5rem' : '190px'};
     z-index:100;
     padding:1rem 0rem;
     background-color: ${props => props.isSection ? 'rgba(99, 55, 84, 1)' : 'transparent'};
@@ -28,12 +30,12 @@ const VertNav = styled.div`
 const Tab = styled.a`
     display:block;
     text-align:right;
-    padding:  0.75rem 1rem 0.75rem 1.5rem;
+    padding:  1.25rem 1rem 0.75rem 0.25rem;
     color: ${props => props.currentSection ? '#F8BEB9' : 'white'};
     font-weight: ${props => props.currentSection ? 700 : 400};
     div {
         width: 10rem;
-        font-size:15px;
+        font-size:1rem;
     }
     :hover {
         color: #F8BEB9;
@@ -49,8 +51,8 @@ const NavText = styled.div`
 
 const Bullet = styled.span`
     position:absolute;
-    width: 7px;
-    height: 7px;
+    width: 0.35rem;
+    height: 0.35rem;
     background-color: #EAD1D1;
     border-radius: 50%;
     margin-top: 0.38rem;
@@ -59,7 +61,7 @@ const Bullet = styled.span`
 
 const NavBar = ({isSection}) => {
     return(
-        <NavWrapper>
+        <NavWrapper isSection={isSection}>
             <VertNav isSection={isSection}>
             {sections.map((section, index) => (
                 <NavHashLink smooth to={section.url}>

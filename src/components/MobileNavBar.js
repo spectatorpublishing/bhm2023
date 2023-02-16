@@ -28,7 +28,6 @@ const NavWrap = styled.div`
 
 const MobileNav = styled.div`
     display: none;
-    
     padding: 0rem 1rem;
     @media only screen and (max-width: 1023px){
         display: flex;
@@ -68,14 +67,14 @@ const MenuIcon = styled.div`
     display: flex;
     color: ${props => props.color};
     .menu {
-        font-size: 30px;
+        font-size:2.25rem;
     }
 `;
 
 const Link = styled.a`
     display: flex;
-    font-size: 18px;
-    padding: 0.5rem 2rem;
+    font-size:1rem;
+    padding: 0.85rem 3rem;
     width: fit-content;
     margin-left: auto;
     background-color: #92718A;
