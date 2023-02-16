@@ -20,7 +20,7 @@ const HeaderDiv = styled.div`
     display: flex;
     text-transform: capitalize;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
         width: fit-content;
         margin: 0rem auto;
         font-size: 2.5rem;
@@ -33,9 +33,11 @@ const ArticlesContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: left;
-    
     padding-top: 25px;
-        @media screen and (max-width: 768px) {
+        @media screen and (min-width: 1024px) {
+            padding-left: 20px;
+        }
+        @media screen and (max-width: 1023px) {
             margin: 0px;
             display: flex;
             align-items: center;

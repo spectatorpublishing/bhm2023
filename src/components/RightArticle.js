@@ -8,7 +8,7 @@ const RightArticleWrapper = styled.div`
     background-color: #5F415B;
     z-index: 1;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
         width: 100%;
         max-width: 90vw;
         justify-content: center;
@@ -19,7 +19,7 @@ const RightArticleWrapper = styled.div`
 const Column = styled.div`
     flex: 1;
     height: fit-content;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
         width: 100%;
     }
 `;
@@ -38,7 +38,7 @@ const MainImage = styled.div`
         object-fit: cover;
     }
 
-    @media screen and (max-width: 970px) {
+    @media screen and (max-width: 1023px) {
         width: 250px;
         height: 250px;
     }
@@ -46,10 +46,10 @@ const MainImage = styled.div`
     @media screen and (max-width: 768px) {
         width: 30vw;
         height: 30vw;
-        margin: 100px 0px 30px 90px;
+        margin: 80px 0px 30px 40px;
 
         img {
-            margin: -50px 0px 0px -50px;
+            margin: -20px 0px 0px -20px;
         }
     }
 `;

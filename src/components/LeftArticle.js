@@ -8,7 +8,7 @@ const LeftArticleWrapper = styled.div`
     background-color: #7A5470;
     z-index: 1;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
         width: 100%;
         max-width: 90vw;
         justify-content: center;
@@ -19,7 +19,7 @@ const LeftArticleWrapper = styled.div`
 const Column = styled.div`
     flex: 1;
     height: fit-content;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
         width: 100%;
     }
 `;
@@ -38,7 +38,7 @@ const MainImage = styled.div`
         object-fit: cover;
     }
 
-    @media screen and (max-width: 970px) {
+    @media screen and (max-width: 1023px) {
         width: 250px;
         height: 250px;
     }

@@ -254,6 +254,126 @@ export const credits = {
       {
         "staff_name": "Ronit Dhulia",
         "title": "Head Copy Editor"
+      },
+      {
+        "staff_name": "Fritzie Schwentker",
+        "title": "Deputy Copy Editor"
+      },
+      {
+        "staff_name": "Maria Levit",
+        "title": "Deputy Copy Editor"
+      },
+      {
+        "staff_name": "Olivia Vella",
+        "title": "Deputy Copy Editor"
+      },
+      {
+        "staff_name": "Renuka Balakrishnan",
+        "title": "Deputy Copy Editor"
+      },
+      {
+        "staff_name": "Sadie Rochman",
+        "title": "Deputy Copy Editor"
+      },
+      {
+        "staff_name": "Yvin Shin",
+        "title": "Deputy Copy Editor"
+      },
+      {
+        "staff_name": "Ainhoa Petri-Hidalgo",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "August Phillips",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "Grace O'Malley",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "Lanah Wyne",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "Lizzy Yee",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "Neena Dzur",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "Reena Bromberg Gaber",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "Safia Aladlouni",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "Sophia Lee",
+        "title": "Associate Copy Editor"
+      },
+      {
+        "staff_name": "Emily Stone",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Emma Moralez",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Natalie DiFusco",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Posey Chiddix",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Pun Setpattanachai",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Rose Leveen",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Sally Kaye",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Celeste Abourjeili",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Daniel Knorek",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Driscoll Callan",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Ella Ahner",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Emma Kaneira",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Nola Gallo",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Reese Ransweiler",
+        "title": "Preslotter"
+      },
+      {
+        "staff_name": "Vaishnavi Sirkay",
+        "title": "Preslotter"
       }
     ],
 };

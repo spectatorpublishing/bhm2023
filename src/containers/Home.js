@@ -46,7 +46,7 @@ const Title = styled.div`
         font-size: 4rem;
     }
     @media only screen and (max-width: 767px){
-        line-height: 3.5rem;
+        line-height: 2.5rem;
         font-size: 2rem;
     }
 `;
