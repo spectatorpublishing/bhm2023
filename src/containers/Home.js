@@ -34,12 +34,21 @@ const Title = styled.div`
     position: absolute;
     margin-top: 35%; 
     color: white;
-    margin-left: 29%;
-    font-family: "EB Garamond";
+    margin-left: 5rem;
+    font-family: 'EB Garamond';
     font-weight: 600;
-    line-height: 8.125rem;
-    font-size: 7.8vw;
+    line-height: 10rem;
+    font-size: 6rem;
+    width:70%;
     text-align: right;
+    @media only screen and (max-width: 1024px){
+        line-height: 5rem;
+        font-size: 4rem;
+    }
+    @media only screen and (max-width: 767px){
+        line-height: 3.5rem;
+        font-size: 2rem;
+    }
 `;
 
 const Home = () => {
@@ -50,7 +59,7 @@ const Home = () => {
                 <MobileNavBar/>
                 <Wrapper>
                     <Photo><img src = {bhm} alt = "black history month graphic" width = "100%"></img></Photo>
-                    <Title>BLACK HISTORY<br></br>MONTH</Title>
+                    <Title>BLACK HISTORY MONTH</Title>
                 </Wrapper>
                 <NavBar/>
                 <Letter/>

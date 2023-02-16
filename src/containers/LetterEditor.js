@@ -2,26 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LetterWrapper = styled.div`
-
-    padding: 3rem 11rem 4rem 11rem;
+    padding:3rem 11rem 10rem 11rem; 
     
-    @media only screen and (max-width: 1200px){
-        padding: 3rem 9rem 4rem 9rem;
-    }
-    @media only screen and (max-width: 1000px){
-        padding: 3rem 5rem 4rem 5rem;
-    }
     @media only screen and (max-width: 768px){
         padding: 3rem 3rem 0rem 3rem;
-    }
-    @media only screen and (max-width: 570px) {
-        margin: 3rem 1rem 0rem 1rem;
-        display: inline-block;
-    }
-
-    @media only screen and (max-width: 400px) {
-        padding: 0;
-        display: inline-block;
     }
 `;
 

@@ -58,7 +58,7 @@ const ArticleInfo = styled.div`
     display: flex;
     flex-direction: column;
     z-index: 1;
-    width: fit-content;
+    width: 95%;
     margin: 2rem 1rem 0rem 1rem;
     
     font-family: 'EB Garamond';
@@ -68,9 +68,9 @@ const ArticleInfo = styled.div`
 `;
 
 const ArticleTitle = styled(ArticleInfo)`
-    font-size: 40px;
+    font-size: 1.8rem;
     @media screen and (max-width: 768px) {
-        font-size: 20px;
+        font-size: 1rem;
     }
 `;
 

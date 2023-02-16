@@ -23,5 +23,13 @@ export const sections = [
     {
         title: "Sports",
         url: "/sports",
+    },
+    {
+        title: "Audio",
+        url: "/audio",
+    },
+    {
+        title: "Spectrum",
+        url: "/spectrum",
     }
 ];

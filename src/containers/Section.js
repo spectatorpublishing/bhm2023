@@ -13,8 +13,8 @@ const Container = styled.div`
 
 const HeaderDiv = styled.div`
     color: white;
-    font-family: EB Garamond;
-    font-size: 70px;
+    font-family: 'EB Garamond';
+    font-size: 4rem;
     font-weight: 600;
     padding: 2rem 4rem;
     display: flex;
@@ -23,7 +23,7 @@ const HeaderDiv = styled.div`
     @media screen and (max-width: 768px) {
         width: fit-content;
         margin: 0rem auto;
-        font-size: 40px;
+        font-size: 2.5rem;
         padding: 1rem 1rem;
         text-align: center;
     }
@@ -53,7 +53,7 @@ const Section = ({ header, articles }) => {
             </HeaderDiv>
             <ArticlesContainer>
                 {articles.map((article, index) => (
-                    (index % 2 == 0) ? <LeftArticle article={article} /> : <RightArticle article={article} />
+                    (index % 2 == 0) ? <a style={{textDecoration:'none'}} href={article.article_link}><LeftArticle article={article} /></a> : <a style={{textDecoration:'none'}} href={article.article_link}><RightArticle article={article} /></a>
                 ))}
             </ArticlesContainer>
         </Container>

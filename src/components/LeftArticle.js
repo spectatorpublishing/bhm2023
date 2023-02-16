@@ -68,9 +68,9 @@ const ArticleInfo = styled.div`
 `;
 
 const ArticleTitle = styled(ArticleInfo)`
-    font-size: 40px;
+    font-size: 1.8rem;
     @media screen and (max-width: 768px) {
-        font-size: 20px;
+        font-size: 1rem;
     }
 `;
 
@@ -85,7 +85,7 @@ const ArticleAuthor = styled(ArticleInfo)`
 
 const LeftArticle = ({ article }) => {
     return (
-        <LeftArticleWrapper>
+        <LeftArticleWrapper>     
             <Column>
                 <MainImage>
                     <img src={article.image_url}/>

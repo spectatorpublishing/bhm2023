@@ -11,8 +11,11 @@ const SpecLogo = styled.div`
 
 const Image = styled.img`
     display: block;
-    width: 24.375%;
+    width: 15rem;
     height: auto;
+    @media only screen and (max-width: 768px){
+        width: 10rem;
+    }
 `;
 
 const Line = styled.div`
@@ -26,7 +29,7 @@ const Line = styled.div`
 const SpecLogoHeader = () => {
     return (
         <div>
-            <SpecLogo><Image src="https://spec-imagehosting.s3.amazonaws.com/CDSwhitemasthead.png" alt="Columbia Spectator logo" ></Image></SpecLogo>
+            <SpecLogo><a href="https://www.columbiaspectator.com/"><Image src="https://spec-imagehosting.s3.amazonaws.com/CDSwhitemasthead.png" alt="Columbia Spectator logo" ></Image></a></SpecLogo>
             <Line></Line>
         </div>
     )
