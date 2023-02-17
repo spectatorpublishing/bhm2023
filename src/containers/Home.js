@@ -57,7 +57,7 @@ const Home = () => {
                 <SpecLogoHeader/>
                 <MobileNavBar/>
                 <Wrapper>
-                    <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WXY3XCUPVZH7VKSTW3FAHFEKHQ.JPG" alt = "black history month graphic" width = "100%"></img></Photo>
+                    <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JYF4NTKRJJC4LD4DO52Z4XQD5E.jpg" alt = "black history month graphic" width = "100%"></img></Photo>
                     <Title>BLACK HISTORY MONTH</Title>
                 </Wrapper>
                 <NavBar/>
