@@ -4,7 +4,6 @@ import Letter from '../containers/LetterEditor';
 import NavBar from '../components/NavBar';
 import styled from 'styled-components';
 import MobileNavBar from '../components/MobileNavBar';
-import bhm from './bhm.JPG';
 import SpecLogoHeader from '../components/SpecLogoHeader';
 
 const HomeContainer = styled.div`
@@ -58,7 +57,7 @@ const Home = () => {
                 <SpecLogoHeader/>
                 <MobileNavBar/>
                 <Wrapper>
-                    <Photo><img src = {bhm} alt = "black history month graphic" width = "100%"></img></Photo>
+                    <Photo><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/WXY3XCUPVZH7VKSTW3FAHFEKHQ.JPG" alt = "black history month graphic" width = "100%"></img></Photo>
                     <Title>BLACK HISTORY MONTH</Title>
                 </Wrapper>
                 <NavBar/>
