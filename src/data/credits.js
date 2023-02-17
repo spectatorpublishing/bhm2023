@@ -104,7 +104,7 @@ export const credits = {
         "title": "Staff Writer"
       }
     ],
-    "Arts and Entertainment": [
+    "Arts and Culture": [
       {
         "staff_name": "Isabella Farfan",
         "title": "Arts & Culture Editor"

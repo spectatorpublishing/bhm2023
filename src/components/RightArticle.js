@@ -94,7 +94,7 @@ const RightArticle = ({ article }) => {
             </Column>
             <Column>
                 <MainImage>
-                    <img src={article.image_url}/>
+                    <img alt={article.article_title}  src={article.image_url}/>
                 </MainImage>
             </Column>
         </RightArticleWrapper>
