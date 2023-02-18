@@ -132,7 +132,7 @@ export const opinion_articles = [
       "article_link": "https://www.columbiaspectator.com/sports/2023/02/13/columbia-comet-ben-johnson-the-lions-track-star-of-the-1930s/",
       "article_title": "‘Columbia Comet’ Ben Johnson: the Lions’ track star of the 1930s",
       "article_authors": "Sydney Stoller",
-      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YNLMCQDMMVEFPHGEYTL5TQGOPA.jpg"
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/24DYNDZ725FYTGEI76RTXNHF2I.JPEG"
     },
     {
       "article_link": "https://www.columbiaspectator.com/sports/2023/02/15/hes-going-to-be-there-for-me-the-bond-between-avery-brown-and-his-father-antonio-jr/",
