@@ -100,7 +100,7 @@ export const credits = {
         "title": "Senior Staff Writer"
       },
       {
-        "staff_name": "Senior Staff Writer",
+        "staff_name": "Sydney Stoller",
         "title": "Staff Writer"
       }
     ],
