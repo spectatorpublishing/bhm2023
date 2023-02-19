@@ -76,6 +76,18 @@ export const opinion_articles = [
       "article_title": "New York is just as racist as Texas",
       "article_authors": "Hayden Flowers",
       "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/3ZLRRJKFGJGB5P6FQEIA7APVLE.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/opinion/2023/02/13/remaining-silent-about-black-oppression-is-an-act-of-violence/",
+      "article_title": "Remaining silent on Black oppression is an act of violence",
+      "article_authors": "Colin Roedl",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/L2TLMWDNYJET7KROSMEYZMX664.jpg"
+    },
+    {
+      "article_link": "https://www.columbiaspectator.com/opinion/2023/02/13/from-a-blm-fist-to-two-fingers/",
+      "article_title": "From BLM fist to two fingers",
+      "article_authors": "Ariel Gilbert",
+      "image_url": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EDIWE2FUBRHWXIQ32QYIA7DUJE.jpg"
     }
   ];
   export const audio_articles = [
